@@ -1,0 +1,26 @@
+name: 'signal_ledger'
+version: '1.0.0'
+config-version: 2
+profile: 'signal_ledger'
+
+model-paths: ['models']
+seed-paths: ['seeds']
+test-paths: ['tests']
+macro-paths: ['macros']
+clean-targets: ['target', 'dbt_packages']
+
+models:
+  signal_ledger:
+    staging:
+      +materialized: view
+      +tags: ['staging']
+    intermediate:
+      +materialized: view
+      +tags: ['intermediate']
+    marts:
+      +materialized: table
+      +tags: ['mart']
+
+seeds:
+  signal_ledger:
+    +quote_columns: false

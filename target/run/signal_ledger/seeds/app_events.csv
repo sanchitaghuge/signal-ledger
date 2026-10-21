@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "signal_ledger"."main"."app_events";
+    -- dbt seed --
+    
+          COPY "signal_ledger"."main"."app_events" FROM '/Users/sanchita/Projects (personal)/signal_ledger_dbt/seeds/app_events.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

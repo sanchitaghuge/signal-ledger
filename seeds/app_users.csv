@@ -1,0 +1,13 @@
+user_id,signup_ts,acquisition_channel,country
+u001,2026-09-01 10:00:00,organic,US
+u002,2026-09-01 12:30:00,paid_social,US
+u003,2026-09-02 08:15:00,referral,CA
+u004,2026-09-02 15:45:00,organic,US
+u005,2026-09-03 09:00:00,paid_search,GB
+u006,2026-09-03 18:10:00,referral,US
+u007,2026-09-04 11:25:00,organic,CA
+u008,2026-09-05 07:40:00,paid_social,US
+u009,2026-09-06 20:20:00,organic,GB
+u010,2026-09-07 13:05:00,referral,US
+u011,2026-09-08 09:15:00,paid_search,US
+u012,2026-09-09 16:00:00,organic,CA

@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: stg_app_users
+    description: "Cleaned user registration records; one row per user."
+    columns:
+      - name: user_id
+        description: "Stable synthetic user identifier."
+        tests: [unique, not_null]
+      - name: acquisition_channel
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['organic', 'paid_social', 'paid_search', 'referral']
+
+  - name: stg_app_events
+    description: "Standardized product events; one row per event."
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: user_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_app_users')
+                field: user_id
+      - name: event_name
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['app_open', 'profile_complete', 'content_view', 'message_sent', 'reaction_added']
+
+  - name: int_user_activation
+    description: "One row per registered user with a 7-day activation flag."
+    columns:
+      - name: user_id
+        tests: [unique, not_null]
+      - name: activated_within_7d
+        tests: [not_null]
+
+  - name: int_daily_user_activity
+    description: "One row per user per event date, with activity counts."
+    columns:
+      - name: user_id
+        tests: [not_null]
+      - name: event_date
+        tests: [not_null]
+
+  - name: mart_daily_product_metrics
+    description: "Daily product engagement metrics at one row per UTC calendar date."
+    columns:
+      - name: event_date
+        tests: [unique, not_null]
+      - name: daily_active_users
+        description: "Distinct users with at least one app_open or content_view event on the date."
+        tests: [not_null]
+      - name: meaningful_actions_per_active_user
+        description: "Meaningful actions divided by DAU; rounded to two decimal places."
+
+  - name: mart_activation_by_cohort
+    description: "Signup cohorts grouped by signup date, acquisition channel, and country."
+    columns:
+      - name: cohort_date
+        tests: [not_null]
+      - name: activation_rate_7d
+        description: "Share of signups with profile_complete in the 7 days after registration."

@@ -1,0 +1,8 @@
+signal_ledger:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: signal_ledger.duckdb
+      schema: main
+      threads: 4

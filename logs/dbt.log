@@ -1,0 +1,1948 @@
+[0m22:33:42.419349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1105a34d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1128d6850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1128d6ad0>]}
+
+
+============================== 22:33:42.421915 | e1f9b1c9-7b2a-469f-8179-d2b4e916e489 ==============================
+[0m22:33:42.421915 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:33:42.422749 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'use_colors': 'True', 'write_json': 'True', 'printer_width': '80', 'empty': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/sanchita/Projects (personal)/signal_ledger_dbt', 'quiet': 'False', 'static_parser': 'True', 'log_path': '/Users/sanchita/Projects (personal)/signal_ledger_dbt/logs', 'invocation_command': 'dbt deps', 'debug': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'hints_enabled': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None'}
+[0m22:33:42.508408 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e1f9b1c9-7b2a-469f-8179-d2b4e916e489', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124ebe10>]}
+[0m22:33:42.517878 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:33:42.518147 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m22:33:42.519540 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.13830796, "process_in_blocks": "0", "process_kernel_time": 0.132561, "process_mem_max_rss": "149487616", "process_out_blocks": "0", "process_user_time": 0.601127}
+[0m22:33:42.519697 [debug] [MainThread]: Command `dbt deps` succeeded at 22:33:42.519663 after 0.14 seconds
+[0m22:33:42.519808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c5c9e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c5dbf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112878050>]}
+[0m22:33:42.519912 [debug] [MainThread]: Flushing usage events
+[0m22:33:42.958213 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:33:50.630925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112c7f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115c2a850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115c2aad0>]}
+
+
+============================== 22:33:50.632571 | 96991e6b-ba63-4480-97aa-fc04415c1510 ==============================
+[0m22:33:50.632571 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:33:50.632796 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'quiet': 'False', 'version_check': 'True', 'log_path': '/Users/sanchita/Projects (personal)/signal_ledger_dbt/logs', 'partial_parse': 'True', 'invocation_command': 'dbt seed', 'log_format': 'default', 'indirect_selection': 'eager', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/Users/sanchita/Projects (personal)/signal_ledger_dbt', 'hints_enabled': 'True', 'no_print': 'None', 'printer_width': '80', 'introspect': 'True', 'debug': 'False', 'empty': 'False', 'fail_fast': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'maximum_seed_size_mib': '1'}
+[0m22:33:51.515516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115b9b5c0>]}
+[0m22:33:51.540895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11590a030>]}
+[0m22:33:51.545398 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m22:33:51.580191 [debug] [MainThread]: checksum: 736f8253bf1e5e1cf9c769facf4e8bd36f24dc656845a15d713b60e177918854, vars: {}, profile: signal_ledger, target: dev, version: 1.12.5
+[0m22:33:51.580545 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:33:51.580693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115d92250>]}
+[0m22:33:52.229624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1169c1c70>]}
+[0m22:33:52.271444 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:33:52.272704 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:33:52.282182 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:33:52.287698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116f22270>]}
+[0m22:33:52.287871 [info ] [MainThread]: Found 6 models, 18 data tests, 2 seeds, 2 sources, 500 macros
+[0m22:33:52.287983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116fcb450>]}
+[0m22:33:52.288743 [info ] [MainThread]: 
+[0m22:33:52.288857 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:33:52.288938 [info ] [MainThread]: 
+[0m22:33:52.289099 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:33:52.290537 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_signal_ledger'
+[0m22:33:52.326566 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger"
+[0m22:33:52.326736 [debug] [ThreadPool]: On list_signal_ledger: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "list_signal_ledger"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"signal_ledger"'
+    
+  
+  
+[0m22:33:52.326831 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:33:52.333307 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m22:33:52.333755 [debug] [ThreadPool]: On list_signal_ledger: Close
+[0m22:33:52.334007 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_signal_ledger, now create_signal_ledger_main)
+[0m22:33:52.334314 [debug] [ThreadPool]: Creating schema "database: "signal_ledger"
+schema: "main"
+"
+[0m22:33:52.336577 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:52.336688 [debug] [ThreadPool]: On create_signal_ledger_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "create_signal_ledger_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='signal_ledger'
+        and type != 'duckdb'
+    
+  
+[0m22:33:52.336773 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:33:52.337132 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:52.337474 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:52.337557 [debug] [ThreadPool]: On create_signal_ledger_main: BEGIN
+[0m22:33:52.337688 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:52.337761 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:52.337835 [debug] [ThreadPool]: On create_signal_ledger_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "create_signal_ledger_main"} */
+
+    
+    
+        create schema if not exists "signal_ledger"."main"
+    
+[0m22:33:52.337999 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:52.338193 [debug] [ThreadPool]: On create_signal_ledger_main: COMMIT
+[0m22:33:52.338274 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:52.338342 [debug] [ThreadPool]: On create_signal_ledger_main: COMMIT
+[0m22:33:52.338458 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:52.338531 [debug] [ThreadPool]: On create_signal_ledger_main: Close
+[0m22:33:52.339001 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_signal_ledger_main, now list_signal_ledger_main)
+[0m22:33:52.340463 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger_main"
+[0m22:33:52.340548 [debug] [ThreadPool]: On list_signal_ledger_main: BEGIN
+[0m22:33:52.340622 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:33:52.340827 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:52.340942 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger_main"
+[0m22:33:52.341029 [debug] [ThreadPool]: On list_signal_ledger_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "list_signal_ledger_main"} */
+select
+      'signal_ledger' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'signal_ledger'
+  
+[0m22:33:52.342366 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:33:52.342706 [debug] [ThreadPool]: On list_signal_ledger_main: ROLLBACK
+[0m22:33:52.342868 [debug] [ThreadPool]: On list_signal_ledger_main: Close
+[0m22:33:52.343040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116f3d910>]}
+[0m22:33:52.343183 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:52.343259 [debug] [MainThread]: On master: BEGIN
+[0m22:33:52.343328 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:33:52.343474 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:52.343549 [debug] [MainThread]: On master: COMMIT
+[0m22:33:52.343618 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:52.343686 [debug] [MainThread]: On master: COMMIT
+[0m22:33:52.343803 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:52.343872 [debug] [MainThread]: On master: Close
+[0m22:33:52.345000 [debug] [Thread-1 (]: Began running node seed.signal_ledger.app_events
+[0m22:33:52.345117 [debug] [Thread-2 (]: Began running node seed.signal_ledger.app_users
+[0m22:33:52.345277 [info ] [Thread-1 (]: 1 of 2 START seed file main.app_events ......................................... [RUN]
+[0m22:33:52.345564 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_signal_ledger_main, now seed.signal_ledger.app_events)
+[0m22:33:52.345702 [debug] [Thread-1 (]: Began compiling node seed.signal_ledger.app_events
+[0m22:33:52.345800 [debug] [Thread-1 (]: Began executing node seed.signal_ledger.app_events
+[0m22:33:52.345422 [info ] [Thread-2 (]: 2 of 2 START seed file main.app_users .......................................... [RUN]
+[0m22:33:52.350726 [debug] [Thread-2 (]: Acquiring new duckdb connection 'seed.signal_ledger.app_users'
+[0m22:33:52.350841 [debug] [Thread-2 (]: Began compiling node seed.signal_ledger.app_users
+[0m22:33:52.354440 [debug] [Thread-2 (]: Began executing node seed.signal_ledger.app_users
+[0m22:33:52.354328 [debug] [Thread-1 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:52.354994 [debug] [Thread-1 (]: On seed.signal_ledger.app_events: BEGIN
+[0m22:33:52.355087 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:52.355521 [debug] [Thread-2 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:52.355618 [debug] [Thread-2 (]: On seed.signal_ledger.app_users: BEGIN
+[0m22:33:52.355795 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:33:52.355709 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:52.355927 [debug] [Thread-1 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:52.356015 [debug] [Thread-1 (]: On seed.signal_ledger.app_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "seed.signal_ledger.app_events"} */
+
+    create table "signal_ledger"."main"."app_events" (event_id text,user_id text,event_ts timestamp without time zone,event_name text,session_id text)
+  
+[0m22:33:52.356145 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:52.356291 [debug] [Thread-2 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:52.356387 [debug] [Thread-2 (]: On seed.signal_ledger.app_users: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "seed.signal_ledger.app_users"} */
+
+    create table "signal_ledger"."main"."app_users" (user_id text,signup_ts timestamp without time zone,acquisition_channel text,country text)
+  
+[0m22:33:52.356516 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:33:52.360124 [debug] [Thread-1 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:52.360378 [debug] [Thread-1 (]: On seed.signal_ledger.app_events: 
+          COPY "signal_ledger"."main"."app_events" FROM '/Users/sanchita/Projects (personal)/signal_ledger_dbt/seeds/app_events.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m22:33:52.360264 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m22:33:52.360790 [debug] [Thread-2 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:52.360889 [debug] [Thread-2 (]: On seed.signal_ledger.app_users: 
+          COPY "signal_ledger"."main"."app_users" FROM '/Users/sanchita/Projects (personal)/signal_ledger_dbt/seeds/app_users.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m22:33:52.363404 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m22:33:52.365264 [debug] [Thread-2 (]: Writing runtime SQL for node "seed.signal_ledger.app_users"
+[0m22:33:52.365379 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m22:33:52.365624 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.signal_ledger.app_events"
+[0m22:33:52.370322 [debug] [Thread-2 (]: On seed.signal_ledger.app_users: COMMIT
+[0m22:33:52.370958 [debug] [Thread-2 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:52.371061 [debug] [Thread-2 (]: On seed.signal_ledger.app_users: COMMIT
+[0m22:33:52.370841 [debug] [Thread-1 (]: On seed.signal_ledger.app_events: COMMIT
+[0m22:33:52.371198 [debug] [Thread-1 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:52.371295 [debug] [Thread-1 (]: On seed.signal_ledger.app_events: COMMIT
+[0m22:33:52.371476 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:52.373671 [debug] [Thread-2 (]: On seed.signal_ledger.app_users: Close
+[0m22:33:52.373800 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:33:52.374264 [debug] [Thread-1 (]: On seed.signal_ledger.app_events: Close
+[0m22:33:52.374890 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120bd9650>]}
+[0m22:33:52.374993 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '96991e6b-ba63-4480-97aa-fc04415c1510', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120b77ed0>]}
+[0m22:33:52.375161 [info ] [Thread-2 (]: 2 of 2 OK loaded seed file main.app_users ...................................... [[32mINSERT 12[0m in 0.02s]
+[0m22:33:52.375498 [debug] [Thread-2 (]: Finished running node seed.signal_ledger.app_users
+[0m22:33:52.375318 [info ] [Thread-1 (]: 1 of 2 OK loaded seed file main.app_events ..................................... [[32mINSERT 40[0m in 0.03s]
+[0m22:33:52.375714 [debug] [Thread-1 (]: Finished running node seed.signal_ledger.app_events
+[0m22:33:52.376147 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:52.376234 [debug] [MainThread]: On master: BEGIN
+[0m22:33:52.376304 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:33:52.376474 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:52.376543 [debug] [MainThread]: On master: COMMIT
+[0m22:33:52.376611 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:52.376674 [debug] [MainThread]: On master: COMMIT
+[0m22:33:52.376784 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:52.376854 [debug] [MainThread]: On master: Close
+[0m22:33:52.376954 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:33:52.377024 [debug] [MainThread]: Connection 'seed.signal_ledger.app_events' was properly closed.
+[0m22:33:52.377085 [debug] [MainThread]: Connection 'seed.signal_ledger.app_users' was properly closed.
+[0m22:33:52.377165 [info ] [MainThread]: 
+[0m22:33:52.377247 [info ] [MainThread]: Finished running 2 seeds in 0 hours 0 minutes and 0.09 seconds (0.09s).
+[0m22:33:52.377473 [debug] [MainThread]: Command end result
+[0m22:33:52.388905 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:33:52.389847 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:33:52.391067 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:33:52.393646 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/run_results.json
+[0m22:33:52.393757 [info ] [MainThread]: 
+[0m22:33:52.393886 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:33:52.393974 [info ] [MainThread]: 
+[0m22:33:52.394083 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m22:33:52.395416 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 1.801658, "process_in_blocks": "0", "process_kernel_time": 0.181478, "process_mem_max_rss": "209240064", "process_out_blocks": "0", "process_user_time": 1.455437}
+[0m22:33:52.395573 [debug] [MainThread]: Command `dbt seed` succeeded at 22:33:52.395547 after 1.80 seconds
+[0m22:33:52.395687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113404550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ce94d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cbd390>]}
+[0m22:33:52.395792 [debug] [MainThread]: Flushing usage events
+[0m22:33:52.713043 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:33:57.797230 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f7f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11242a850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11242aad0>]}
+
+
+============================== 22:33:57.798833 | 7ea25155-52fd-472d-a5a8-0417bf2654a3 ==============================
+[0m22:33:57.798833 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:33:57.799056 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'printer_width': '80', 'debug': 'False', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'log_cache_events': 'False', 'invocation_command': 'dbt build', 'warn_error': 'None', 'static_parser': 'True', 'use_colors': 'True', 'quiet': 'False', 'log_format': 'default', 'write_json': 'True', 'introspect': 'True', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sanchita/Projects (personal)/signal_ledger_dbt', 'log_path': '/Users/sanchita/Projects (personal)/signal_ledger_dbt/logs', 'hints_enabled': 'True', 'empty': 'False', 'no_print': 'None', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False'}
+[0m22:33:57.898007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11229b5c0>]}
+[0m22:33:57.922771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11200a030>]}
+[0m22:33:57.923534 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m22:33:57.952668 [debug] [MainThread]: checksum: 736f8253bf1e5e1cf9c769facf4e8bd36f24dc656845a15d713b60e177918854, vars: {}, profile: signal_ledger, target: dev, version: 1.12.5
+[0m22:33:58.006815 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:33:58.006962 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:33:58.007047 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:33:58.010481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d02e50>]}
+[0m22:33:58.064868 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:33:58.065936 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:33:58.070475 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:33:58.079279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131b32f0>]}
+[0m22:33:58.079458 [info ] [MainThread]: Found 6 models, 18 data tests, 2 seeds, 2 sources, 500 macros
+[0m22:33:58.080598 [info ] [MainThread]: 
+[0m22:33:58.080719 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:33:58.080805 [info ] [MainThread]: 
+[0m22:33:58.080977 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:33:58.082601 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_signal_ledger'
+[0m22:33:58.105033 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger"
+[0m22:33:58.105200 [debug] [ThreadPool]: On list_signal_ledger: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "list_signal_ledger"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"signal_ledger"'
+    
+  
+  
+[0m22:33:58.105300 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:33:58.111008 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m22:33:58.111516 [debug] [ThreadPool]: On list_signal_ledger: Close
+[0m22:33:58.111774 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_signal_ledger, now create_signal_ledger_main)
+[0m22:33:58.111920 [debug] [ThreadPool]: Creating schema "database: "signal_ledger"
+schema: "main"
+"
+[0m22:33:58.114318 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:58.114429 [debug] [ThreadPool]: On create_signal_ledger_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "create_signal_ledger_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='signal_ledger'
+        and type != 'duckdb'
+    
+  
+[0m22:33:58.114512 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:33:58.114803 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:58.115146 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:58.115230 [debug] [ThreadPool]: On create_signal_ledger_main: BEGIN
+[0m22:33:58.115359 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:58.115430 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:58.115499 [debug] [ThreadPool]: On create_signal_ledger_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "create_signal_ledger_main"} */
+
+    
+    
+        create schema if not exists "signal_ledger"."main"
+    
+[0m22:33:58.115633 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:58.115829 [debug] [ThreadPool]: On create_signal_ledger_main: COMMIT
+[0m22:33:58.115911 [debug] [ThreadPool]: Using duckdb connection "create_signal_ledger_main"
+[0m22:33:58.115983 [debug] [ThreadPool]: On create_signal_ledger_main: COMMIT
+[0m22:33:58.116099 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:58.116176 [debug] [ThreadPool]: On create_signal_ledger_main: Close
+[0m22:33:58.116684 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_signal_ledger_main, now list_signal_ledger_main)
+[0m22:33:58.118164 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger_main"
+[0m22:33:58.118268 [debug] [ThreadPool]: On list_signal_ledger_main: BEGIN
+[0m22:33:58.118347 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:33:58.118551 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m22:33:58.118627 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger_main"
+[0m22:33:58.118703 [debug] [ThreadPool]: On list_signal_ledger_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "list_signal_ledger_main"} */
+select
+      'signal_ledger' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'signal_ledger'
+  
+[0m22:33:58.119928 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:33:58.120314 [debug] [ThreadPool]: On list_signal_ledger_main: ROLLBACK
+[0m22:33:58.120468 [debug] [ThreadPool]: On list_signal_ledger_main: Close
+[0m22:33:58.120782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132398d0>]}
+[0m22:33:58.120930 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:58.121008 [debug] [MainThread]: On master: BEGIN
+[0m22:33:58.121078 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:33:58.121222 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:58.121297 [debug] [MainThread]: On master: COMMIT
+[0m22:33:58.121365 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:58.121432 [debug] [MainThread]: On master: COMMIT
+[0m22:33:58.121543 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:58.121613 [debug] [MainThread]: On master: Close
+[0m22:33:58.122491 [debug] [Thread-4 (]: Began running node seed.signal_ledger.app_users
+[0m22:33:58.122889 [info ] [Thread-4 (]: 4 of 26 START seed file main.app_users ......................................... [RUN]
+[0m22:33:58.123166 [debug] [Thread-4 (]: Acquiring new duckdb connection 'seed.signal_ledger.app_users'
+[0m22:33:58.123273 [debug] [Thread-4 (]: Began compiling node seed.signal_ledger.app_users
+[0m22:33:58.123372 [debug] [Thread-4 (]: Began executing node seed.signal_ledger.app_users
+[0m22:33:58.122730 [debug] [Thread-1 (]: Began running node model.signal_ledger.stg_app_events
+[0m22:33:58.123018 [debug] [Thread-3 (]: Began running node seed.signal_ledger.app_events
+[0m22:33:58.122619 [debug] [Thread-2 (]: Began running node model.signal_ledger.stg_app_users
+[0m22:33:58.128531 [info ] [Thread-1 (]: 1 of 26 START sql view model main.stg_app_events ............................... [RUN]
+[0m22:33:58.132819 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_signal_ledger_main, now model.signal_ledger.stg_app_events)
+[0m22:33:58.132994 [debug] [Thread-1 (]: Began compiling node model.signal_ledger.stg_app_events
+[0m22:33:58.134812 [debug] [Thread-1 (]: Writing injected SQL for node "model.signal_ledger.stg_app_events"
+[0m22:33:58.132340 [debug] [Thread-4 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:58.132515 [info ] [Thread-3 (]: 3 of 26 START seed file main.app_events ........................................ [RUN]
+[0m22:33:58.132667 [info ] [Thread-2 (]: 2 of 26 START sql view model main.stg_app_users ................................ [RUN]
+[0m22:33:58.135281 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.signal_ledger.stg_app_users'
+[0m22:33:58.135384 [debug] [Thread-2 (]: Began compiling node model.signal_ledger.stg_app_users
+[0m22:33:58.135871 [debug] [Thread-2 (]: Writing injected SQL for node "model.signal_ledger.stg_app_users"
+[0m22:33:58.134982 [debug] [Thread-4 (]: On seed.signal_ledger.app_users: BEGIN
+[0m22:33:58.136003 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m22:33:58.135144 [debug] [Thread-3 (]: Acquiring new duckdb connection 'seed.signal_ledger.app_events'
+[0m22:33:58.136381 [debug] [Thread-3 (]: Began compiling node seed.signal_ledger.app_events
+[0m22:33:58.136601 [debug] [Thread-3 (]: Began executing node seed.signal_ledger.app_events
+[0m22:33:58.137150 [debug] [Thread-2 (]: Began executing node model.signal_ledger.stg_app_users
+[0m22:33:58.136246 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.146325 [debug] [Thread-4 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:58.136506 [debug] [Thread-1 (]: Began executing node model.signal_ledger.stg_app_events
+[0m22:33:58.147806 [debug] [Thread-1 (]: Writing runtime sql for node "model.signal_ledger.stg_app_events"
+[0m22:33:58.145410 [debug] [Thread-2 (]: Writing runtime sql for node "model.signal_ledger.stg_app_users"
+[0m22:33:58.146442 [debug] [Thread-4 (]: On seed.signal_ledger.app_users: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "seed.signal_ledger.app_users"} */
+truncate table "signal_ledger"."main"."app_users"
+[0m22:33:58.146198 [debug] [Thread-3 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:58.148603 [debug] [Thread-3 (]: On seed.signal_ledger.app_events: BEGIN
+[0m22:33:58.148974 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m22:33:58.149108 [debug] [Thread-1 (]: Using duckdb connection "model.signal_ledger.stg_app_events"
+[0m22:33:58.149409 [debug] [Thread-1 (]: On model.signal_ledger.stg_app_events: BEGIN
+[0m22:33:58.149523 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:58.149224 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.153104 [debug] [Thread-4 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:58.153364 [debug] [Thread-4 (]: On seed.signal_ledger.app_users: 
+          COPY "signal_ledger"."main"."app_users" FROM '/Users/sanchita/Projects (personal)/signal_ledger_dbt/seeds/app_users.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m22:33:58.148768 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.stg_app_users"
+[0m22:33:58.153627 [debug] [Thread-2 (]: On model.signal_ledger.stg_app_users: BEGIN
+[0m22:33:58.153718 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m22:33:58.153238 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m22:33:58.153880 [debug] [Thread-3 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:58.153990 [debug] [Thread-3 (]: On seed.signal_ledger.app_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "seed.signal_ledger.app_events"} */
+truncate table "signal_ledger"."main"."app_events"
+[0m22:33:58.153521 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m22:33:58.154225 [debug] [Thread-1 (]: Using duckdb connection "model.signal_ledger.stg_app_events"
+[0m22:33:58.154330 [debug] [Thread-1 (]: On model.signal_ledger.stg_app_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.stg_app_events"} */
+
+  
+  create view "signal_ledger"."main"."stg_app_events__dbt_tmp" as (
+    select
+    cast(event_id as varchar) as event_id,
+    cast(user_id as varchar) as user_id,
+    cast(event_ts as timestamp) as event_ts,
+    cast(event_ts as date) as event_date,
+    lower(trim(event_name)) as event_name,
+    cast(session_id as varchar) as session_id
+from "signal_ledger"."main"."app_events"
+  );
+
+[0m22:33:58.154091 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.154611 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.stg_app_users"
+[0m22:33:58.154715 [debug] [Thread-2 (]: On model.signal_ledger.stg_app_users: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.stg_app_users"} */
+
+  
+  create view "signal_ledger"."main"."stg_app_users__dbt_tmp" as (
+    select
+    cast(user_id as varchar) as user_id,
+    cast(signup_ts as timestamp) as signup_ts,
+    lower(trim(acquisition_channel)) as acquisition_channel,
+    upper(trim(country)) as country
+from "signal_ledger"."main"."app_users"
+  );
+
+[0m22:33:58.154503 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.155214 [debug] [Thread-3 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:58.155322 [debug] [Thread-3 (]: On seed.signal_ledger.app_events: 
+          COPY "signal_ledger"."main"."app_events" FROM '/Users/sanchita/Projects (personal)/signal_ledger_dbt/seeds/app_events.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m22:33:58.154817 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.157310 [debug] [Thread-1 (]: Using duckdb connection "model.signal_ledger.stg_app_events"
+[0m22:33:58.155465 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.158206 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.stg_app_users"
+[0m22:33:58.158411 [debug] [Thread-2 (]: On model.signal_ledger.stg_app_users: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.stg_app_users"} */
+alter view "signal_ledger"."main"."stg_app_users__dbt_tmp" rename to "stg_app_users"
+[0m22:33:58.157455 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m22:33:58.160202 [debug] [Thread-4 (]: Writing runtime SQL for node "seed.signal_ledger.app_users"
+[0m22:33:58.157578 [debug] [Thread-1 (]: On model.signal_ledger.stg_app_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.stg_app_events"} */
+alter view "signal_ledger"."main"."stg_app_events__dbt_tmp" rename to "stg_app_events"
+[0m22:33:58.158316 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m22:33:58.160615 [debug] [Thread-3 (]: Writing runtime SQL for node "seed.signal_ledger.app_events"
+[0m22:33:58.160360 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m22:33:58.164202 [debug] [Thread-2 (]: On model.signal_ledger.stg_app_users: COMMIT
+[0m22:33:58.164429 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.stg_app_users"
+[0m22:33:58.164533 [debug] [Thread-2 (]: On model.signal_ledger.stg_app_users: COMMIT
+[0m22:33:58.164318 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m22:33:58.164991 [debug] [Thread-1 (]: On model.signal_ledger.stg_app_events: COMMIT
+[0m22:33:58.165089 [debug] [Thread-1 (]: Using duckdb connection "model.signal_ledger.stg_app_events"
+[0m22:33:58.165598 [debug] [Thread-1 (]: On model.signal_ledger.stg_app_events: COMMIT
+[0m22:33:58.165729 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.167111 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.stg_app_users"
+[0m22:33:58.167216 [debug] [Thread-2 (]: On model.signal_ledger.stg_app_users: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.stg_app_users"} */
+
+      drop view if exists "signal_ledger"."main"."stg_app_users__dbt_backup" cascade
+    
+[0m22:33:58.165498 [debug] [Thread-4 (]: On seed.signal_ledger.app_users: COMMIT
+[0m22:33:58.167374 [debug] [Thread-4 (]: Using duckdb connection "seed.signal_ledger.app_users"
+[0m22:33:58.167877 [debug] [Thread-4 (]: On seed.signal_ledger.app_users: COMMIT
+[0m22:33:58.167775 [debug] [Thread-3 (]: On seed.signal_ledger.app_events: COMMIT
+[0m22:33:58.168370 [debug] [Thread-3 (]: Using duckdb connection "seed.signal_ledger.app_events"
+[0m22:33:58.168461 [debug] [Thread-3 (]: On seed.signal_ledger.app_events: COMMIT
+[0m22:33:58.167976 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m22:33:58.168939 [debug] [Thread-1 (]: Using duckdb connection "model.signal_ledger.stg_app_events"
+[0m22:33:58.169045 [debug] [Thread-1 (]: On model.signal_ledger.stg_app_events: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.stg_app_events"} */
+
+      drop view if exists "signal_ledger"."main"."stg_app_events__dbt_backup" cascade
+    
+[0m22:33:58.169140 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.169749 [debug] [Thread-4 (]: On seed.signal_ledger.app_users: Close
+[0m22:33:58.168231 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.170441 [debug] [Thread-2 (]: On model.signal_ledger.stg_app_users: Close
+[0m22:33:58.170544 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.169860 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.171503 [debug] [Thread-3 (]: On seed.signal_ledger.app_events: Close
+[0m22:33:58.171318 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113737520>]}
+[0m22:33:58.171597 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113232690>]}
+[0m22:33:58.172148 [info ] [Thread-2 (]: 2 of 26 OK created sql view model main.stg_app_users ........................... [[32mOK[0m in 0.04s]
+[0m22:33:58.172319 [debug] [Thread-2 (]: Finished running node model.signal_ledger.stg_app_users
+[0m22:33:58.171966 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113799d30>]}
+[0m22:33:58.171178 [debug] [Thread-1 (]: On model.signal_ledger.stg_app_events: Close
+[0m22:33:58.171784 [info ] [Thread-4 (]: 4 of 26 OK loaded seed file main.app_users ..................................... [[32mINSERT 12[0m in 0.05s]
+[0m22:33:58.172913 [debug] [Thread-4 (]: Finished running node seed.signal_ledger.app_users
+[0m22:33:58.173031 [debug] [Thread-4 (]: Began running node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:33:58.173269 [info ] [Thread-4 (]: 6 of 26 START test not_null_stg_app_users_user_id .............................. [RUN]
+[0m22:33:58.173400 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.signal_ledger.app_users, now test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3)
+[0m22:33:58.173502 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:33:58.177508 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3"
+[0m22:33:58.172750 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11362edf0>]}
+[0m22:33:58.173150 [debug] [Thread-2 (]: Began running node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:33:58.172492 [info ] [Thread-3 (]: 3 of 26 OK loaded seed file main.app_events .................................... [[32mINSERT 40[0m in 0.04s]
+[0m22:33:58.178075 [debug] [Thread-3 (]: Finished running node seed.signal_ledger.app_events
+[0m22:33:58.178289 [debug] [Thread-3 (]: Began running node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:33:58.178400 [info ] [Thread-3 (]: 7 of 26 START test unique_stg_app_users_user_id ................................ [RUN]
+[0m22:33:58.178537 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.signal_ledger.app_events, now test.signal_ledger.unique_stg_app_users_user_id.00d7880dff)
+[0m22:33:58.178643 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:33:58.181396 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.unique_stg_app_users_user_id.00d7880dff"
+[0m22:33:58.177740 [info ] [Thread-1 (]: 1 of 26 OK created sql view model main.stg_app_events .......................... [[32mOK[0m in 0.04s]
+[0m22:33:58.177887 [info ] [Thread-2 (]: 5 of 26 START test accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral  [RUN]
+[0m22:33:58.178184 [debug] [Thread-4 (]: Began executing node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:33:58.186962 [debug] [Thread-4 (]: Writing runtime sql for node "test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3"
+[0m22:33:58.181768 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.signal_ledger.stg_app_users, now test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4)
+[0m22:33:58.181618 [debug] [Thread-1 (]: Finished running node model.signal_ledger.stg_app_events
+[0m22:33:58.187189 [debug] [Thread-2 (]: Began compiling node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:33:58.193703 [debug] [Thread-1 (]: Began running node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:33:58.187381 [debug] [Thread-3 (]: Began executing node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:33:58.193871 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3"
+[0m22:33:58.196220 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3: BEGIN
+[0m22:33:58.196319 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m22:33:58.195595 [info ] [Thread-1 (]: 8 of 26 START test accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added  [RUN]
+[0m22:33:58.196528 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.signal_ledger.stg_app_events, now test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3)
+[0m22:33:58.196641 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:33:58.195474 [debug] [Thread-2 (]: Writing injected SQL for node "test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4"
+[0m22:33:58.202667 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m22:33:58.203884 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3"
+[0m22:33:58.196093 [debug] [Thread-3 (]: Writing runtime sql for node "test.signal_ledger.unique_stg_app_users_user_id.00d7880dff"
+[0m22:33:58.203994 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from "signal_ledger"."main"."stg_app_users"
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.203719 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3"
+[0m22:33:58.204313 [debug] [Thread-2 (]: Began executing node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:33:58.204831 [debug] [Thread-2 (]: Writing runtime sql for node "test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4"
+[0m22:33:58.204993 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.unique_stg_app_users_user_id.00d7880dff"
+[0m22:33:58.205118 [debug] [Thread-3 (]: On test.signal_ledger.unique_stg_app_users_user_id.00d7880dff: BEGIN
+[0m22:33:58.205327 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:33:58.205227 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.205452 [debug] [Thread-1 (]: Began executing node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:33:58.206069 [debug] [Thread-1 (]: Writing runtime sql for node "test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3"
+[0m22:33:58.205654 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4"
+[0m22:33:58.207802 [debug] [Thread-2 (]: On test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4: BEGIN
+[0m22:33:58.207919 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:33:58.207565 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3: ROLLBACK
+[0m22:33:58.207692 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m22:33:58.208243 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.unique_stg_app_users_user_id.00d7880dff"
+[0m22:33:58.208442 [debug] [Thread-3 (]: On test.signal_ledger.unique_stg_app_users_user_id.00d7880dff: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.unique_stg_app_users_user_id.00d7880dff"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    user_id as unique_field,
+    count(*) as n_records
+
+from "signal_ledger"."main"."stg_app_users"
+where user_id is not null
+group by user_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.208343 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.208563 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4"
+[0m22:33:58.208823 [debug] [Thread-2 (]: On test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        acquisition_channel as value_field,
+        count(*) as n_records
+
+    from "signal_ledger"."main"."stg_app_users"
+    group by acquisition_channel
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'organic','paid_social','paid_search','referral'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.208719 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3: Close
+[0m22:33:58.208146 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3"
+[0m22:33:58.209009 [debug] [Thread-1 (]: On test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3: BEGIN
+[0m22:33:58.209323 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:58.209201 [info ] [Thread-4 (]: 6 of 26 PASS not_null_stg_app_users_user_id .................................... [[32mPASS[0m in 0.04s]
+[0m22:33:58.209661 [debug] [Thread-4 (]: Finished running node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:33:58.209790 [debug] [Thread-4 (]: Began running node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:33:58.210103 [info ] [Thread-4 (]: 9 of 26 START test not_null_stg_app_events_event_id ............................ [RUN]
+[0m22:33:58.210239 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3, now test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699)
+[0m22:33:58.210344 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:33:58.212359 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699"
+[0m22:33:58.209487 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.209895 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.209981 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.213349 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3"
+[0m22:33:58.213484 [debug] [Thread-1 (]: On test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        event_name as value_field,
+        count(*) as n_records
+
+    from "signal_ledger"."main"."stg_app_events"
+    group by event_name
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'app_open','profile_complete','content_view','message_sent','reaction_added'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.212860 [debug] [Thread-2 (]: On test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4: ROLLBACK
+[0m22:33:58.213704 [debug] [Thread-4 (]: Began executing node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:33:58.214206 [debug] [Thread-4 (]: Writing runtime sql for node "test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699"
+[0m22:33:58.213236 [debug] [Thread-3 (]: On test.signal_ledger.unique_stg_app_users_user_id.00d7880dff: ROLLBACK
+[0m22:33:58.214425 [debug] [Thread-2 (]: On test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4: Close
+[0m22:33:58.214562 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.214661 [debug] [Thread-3 (]: On test.signal_ledger.unique_stg_app_users_user_id.00d7880dff: Close
+[0m22:33:58.214881 [info ] [Thread-2 (]: 5 of 26 PASS accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral  [[32mPASS[0m in 0.03s]
+[0m22:33:58.215217 [debug] [Thread-2 (]: Finished running node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:33:58.215732 [debug] [Thread-2 (]: Began running node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:33:58.215967 [info ] [Thread-2 (]: 10 of 26 START test not_null_stg_app_events_user_id ............................ [RUN]
+[0m22:33:58.216115 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4, now test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048)
+[0m22:33:58.215057 [info ] [Thread-3 (]: 7 of 26 PASS unique_stg_app_users_user_id ...................................... [[32mPASS[0m in 0.04s]
+[0m22:33:58.216348 [debug] [Thread-3 (]: Finished running node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:33:58.216447 [debug] [Thread-3 (]: Began running node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:33:58.216548 [info ] [Thread-3 (]: 11 of 26 START test relationships_stg_app_events_user_id__user_id__ref_stg_app_users_  [RUN]
+[0m22:33:58.216687 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.signal_ledger.unique_stg_app_users_user_id.00d7880dff, now test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961)
+[0m22:33:58.216785 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:33:58.221533 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961"
+[0m22:33:58.215604 [debug] [Thread-1 (]: On test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3: ROLLBACK
+[0m22:33:58.215842 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699"
+[0m22:33:58.216217 [debug] [Thread-2 (]: Began compiling node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:33:58.223859 [debug] [Thread-2 (]: Writing injected SQL for node "test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048"
+[0m22:33:58.221735 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699: BEGIN
+[0m22:33:58.224201 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m22:33:58.224036 [debug] [Thread-1 (]: On test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3: Close
+[0m22:33:58.224323 [debug] [Thread-3 (]: Began executing node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:33:58.225070 [debug] [Thread-3 (]: Writing runtime sql for node "test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961"
+[0m22:33:58.224590 [info ] [Thread-1 (]: 8 of 26 PASS accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added  [[32mPASS[0m in 0.03s]
+[0m22:33:58.225405 [debug] [Thread-1 (]: Finished running node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:33:58.225527 [debug] [Thread-1 (]: Began running node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:33:58.225624 [info ] [Thread-1 (]: 12 of 26 START test unique_stg_app_events_event_id ............................. [RUN]
+[0m22:33:58.225750 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3, now test.signal_ledger.unique_stg_app_events_event_id.4259203d55)
+[0m22:33:58.225988 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:33:58.227782 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.unique_stg_app_events_event_id.4259203d55"
+[0m22:33:58.225891 [debug] [Thread-2 (]: Began executing node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:33:58.228390 [debug] [Thread-2 (]: Writing runtime sql for node "test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048"
+[0m22:33:58.225247 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.228540 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699"
+[0m22:33:58.228648 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_id
+from "signal_ledger"."main"."stg_app_events"
+where event_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.227936 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961"
+[0m22:33:58.228948 [debug] [Thread-3 (]: On test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961: BEGIN
+[0m22:33:58.229189 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:33:58.229073 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048"
+[0m22:33:58.229443 [debug] [Thread-2 (]: On test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048: BEGIN
+[0m22:33:58.229545 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:33:58.229297 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.228829 [debug] [Thread-1 (]: Began executing node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:33:58.230135 [debug] [Thread-1 (]: Writing runtime sql for node "test.signal_ledger.unique_stg_app_events_event_id.4259203d55"
+[0m22:33:58.230578 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699: ROLLBACK
+[0m22:33:58.229646 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.230733 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961"
+[0m22:33:58.230935 [debug] [Thread-3 (]: On test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select user_id as from_field
+    from "signal_ledger"."main"."stg_app_events"
+    where user_id is not null
+),
+
+parent as (
+    select user_id as to_field
+    from "signal_ledger"."main"."stg_app_users"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.231041 [debug] [Thread-4 (]: On test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699: Close
+[0m22:33:58.230836 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.231222 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048"
+[0m22:33:58.231432 [debug] [Thread-2 (]: On test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from "signal_ledger"."main"."stg_app_events"
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.231594 [info ] [Thread-4 (]: 9 of 26 PASS not_null_stg_app_events_event_id .................................. [[32mPASS[0m in 0.02s]
+[0m22:33:58.231808 [debug] [Thread-4 (]: Finished running node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:33:58.231334 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.unique_stg_app_events_event_id.4259203d55"
+[0m22:33:58.231957 [debug] [Thread-1 (]: On test.signal_ledger.unique_stg_app_events_event_id.4259203d55: BEGIN
+[0m22:33:58.232170 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:58.232264 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.232060 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.232719 [debug] [Thread-2 (]: On test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048: ROLLBACK
+[0m22:33:58.233211 [debug] [Thread-3 (]: On test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961: ROLLBACK
+[0m22:33:58.232827 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.233450 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.unique_stg_app_events_event_id.4259203d55"
+[0m22:33:58.233557 [debug] [Thread-1 (]: On test.signal_ledger.unique_stg_app_events_event_id.4259203d55: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.unique_stg_app_events_event_id.4259203d55"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    event_id as unique_field,
+    count(*) as n_records
+
+from "signal_ledger"."main"."stg_app_events"
+where event_id is not null
+group by event_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.233659 [debug] [Thread-3 (]: On test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961: Close
+[0m22:33:58.233356 [debug] [Thread-2 (]: On test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048: Close
+[0m22:33:58.234046 [info ] [Thread-2 (]: 10 of 26 PASS not_null_stg_app_events_user_id .................................. [[32mPASS[0m in 0.02s]
+[0m22:33:58.234195 [debug] [Thread-2 (]: Finished running node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:33:58.233877 [info ] [Thread-3 (]: 11 of 26 PASS relationships_stg_app_events_user_id__user_id__ref_stg_app_users_  [[32mPASS[0m in 0.02s]
+[0m22:33:58.234451 [debug] [Thread-3 (]: Finished running node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:33:58.234327 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.234807 [debug] [Thread-1 (]: On test.signal_ledger.unique_stg_app_events_event_id.4259203d55: ROLLBACK
+[0m22:33:58.234944 [debug] [Thread-1 (]: On test.signal_ledger.unique_stg_app_events_event_id.4259203d55: Close
+[0m22:33:58.235094 [info ] [Thread-1 (]: 12 of 26 PASS unique_stg_app_events_event_id ................................... [[32mPASS[0m in 0.01s]
+[0m22:33:58.235237 [debug] [Thread-1 (]: Finished running node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:33:58.235499 [debug] [Thread-4 (]: Began running node model.signal_ledger.int_daily_user_activity
+[0m22:33:58.235752 [info ] [Thread-4 (]: 13 of 26 START sql view model main.int_daily_user_activity ..................... [RUN]
+[0m22:33:58.235918 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699, now model.signal_ledger.int_daily_user_activity)
+[0m22:33:58.236031 [debug] [Thread-4 (]: Began compiling node model.signal_ledger.int_daily_user_activity
+[0m22:33:58.236546 [debug] [Thread-4 (]: Writing injected SQL for node "model.signal_ledger.int_daily_user_activity"
+[0m22:33:58.235612 [debug] [Thread-2 (]: Began running node model.signal_ledger.int_user_activation
+[0m22:33:58.236712 [info ] [Thread-2 (]: 14 of 26 START sql view model main.int_user_activation ......................... [RUN]
+[0m22:33:58.236869 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048, now model.signal_ledger.int_user_activation)
+[0m22:33:58.236969 [debug] [Thread-2 (]: Began compiling node model.signal_ledger.int_user_activation
+[0m22:33:58.237540 [debug] [Thread-2 (]: Writing injected SQL for node "model.signal_ledger.int_user_activation"
+[0m22:33:58.237870 [debug] [Thread-4 (]: Began executing node model.signal_ledger.int_daily_user_activity
+[0m22:33:58.238894 [debug] [Thread-4 (]: Writing runtime sql for node "model.signal_ledger.int_daily_user_activity"
+[0m22:33:58.237968 [debug] [Thread-2 (]: Began executing node model.signal_ledger.int_user_activation
+[0m22:33:58.239680 [debug] [Thread-2 (]: Writing runtime sql for node "model.signal_ledger.int_user_activation"
+[0m22:33:58.239864 [debug] [Thread-4 (]: Using duckdb connection "model.signal_ledger.int_daily_user_activity"
+[0m22:33:58.239964 [debug] [Thread-4 (]: On model.signal_ledger.int_daily_user_activity: BEGIN
+[0m22:33:58.240065 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m22:33:58.240286 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.int_user_activation"
+[0m22:33:58.240393 [debug] [Thread-2 (]: On model.signal_ledger.int_user_activation: BEGIN
+[0m22:33:58.240487 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:33:58.240590 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.240733 [debug] [Thread-4 (]: Using duckdb connection "model.signal_ledger.int_daily_user_activity"
+[0m22:33:58.240831 [debug] [Thread-4 (]: On model.signal_ledger.int_daily_user_activity: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.int_daily_user_activity"} */
+
+  
+  create view "signal_ledger"."main"."int_daily_user_activity__dbt_tmp" as (
+    select
+    event_date,
+    user_id,
+    count(*) as total_events,
+    sum(case when event_name in ('app_open', 'content_view') then 1 else 0 end) as qualifying_active_events,
+    sum(case when event_name in ('message_sent', 'content_view', 'reaction_added') then 1 else 0 end) as meaningful_actions
+from "signal_ledger"."main"."stg_app_events"
+group by event_date, user_id
+  );
+
+[0m22:33:58.240925 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.241075 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.int_user_activation"
+[0m22:33:58.241173 [debug] [Thread-2 (]: On model.signal_ledger.int_user_activation: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.int_user_activation"} */
+
+  
+  create view "signal_ledger"."main"."int_user_activation__dbt_tmp" as (
+    with users as (
+    select user_id, signup_ts, cast(signup_ts as date) as signup_date, acquisition_channel, country
+    from "signal_ledger"."main"."stg_app_users"
+),
+activation_events as (
+    select user_id, min(event_ts) as first_profile_complete_ts
+    from "signal_ledger"."main"."stg_app_events"
+    where event_name = 'profile_complete'
+    group by user_id
+)
+select
+    u.user_id,
+    u.signup_ts,
+    u.signup_date,
+    u.acquisition_channel,
+    u.country,
+    a.first_profile_complete_ts,
+    case
+        when a.first_profile_complete_ts >= u.signup_ts
+         and a.first_profile_complete_ts < u.signup_ts + interval '7 days'
+        then true else false
+    end as activated_within_7d
+from users u
+left join activation_events a using (user_id)
+  );
+
+[0m22:33:58.241345 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.241949 [debug] [Thread-4 (]: Using duckdb connection "model.signal_ledger.int_daily_user_activity"
+[0m22:33:58.242048 [debug] [Thread-4 (]: On model.signal_ledger.int_daily_user_activity: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.int_daily_user_activity"} */
+alter view "signal_ledger"."main"."int_daily_user_activity__dbt_tmp" rename to "int_daily_user_activity"
+[0m22:33:58.242147 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.242761 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.int_user_activation"
+[0m22:33:58.242861 [debug] [Thread-2 (]: On model.signal_ledger.int_user_activation: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.int_user_activation"} */
+alter view "signal_ledger"."main"."int_user_activation__dbt_tmp" rename to "int_user_activation"
+[0m22:33:58.242954 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.243351 [debug] [Thread-4 (]: On model.signal_ledger.int_daily_user_activity: COMMIT
+[0m22:33:58.243444 [debug] [Thread-4 (]: Using duckdb connection "model.signal_ledger.int_daily_user_activity"
+[0m22:33:58.243531 [debug] [Thread-4 (]: On model.signal_ledger.int_daily_user_activity: COMMIT
+[0m22:33:58.243643 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.244051 [debug] [Thread-2 (]: On model.signal_ledger.int_user_activation: COMMIT
+[0m22:33:58.244143 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.int_user_activation"
+[0m22:33:58.244229 [debug] [Thread-2 (]: On model.signal_ledger.int_user_activation: COMMIT
+[0m22:33:58.244315 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.244914 [debug] [Thread-4 (]: Using duckdb connection "model.signal_ledger.int_daily_user_activity"
+[0m22:33:58.245009 [debug] [Thread-4 (]: On model.signal_ledger.int_daily_user_activity: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.int_daily_user_activity"} */
+
+      drop view if exists "signal_ledger"."main"."int_daily_user_activity__dbt_backup" cascade
+    
+[0m22:33:58.245100 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.245503 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.int_user_activation"
+[0m22:33:58.245601 [debug] [Thread-2 (]: On model.signal_ledger.int_user_activation: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.int_user_activation"} */
+
+      drop view if exists "signal_ledger"."main"."int_user_activation__dbt_backup" cascade
+    
+[0m22:33:58.245718 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.246026 [debug] [Thread-4 (]: On model.signal_ledger.int_daily_user_activity: Close
+[0m22:33:58.246116 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.246598 [debug] [Thread-2 (]: On model.signal_ledger.int_user_activation: Close
+[0m22:33:58.246285 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1127d6e50>]}
+[0m22:33:58.246915 [info ] [Thread-4 (]: 13 of 26 OK created sql view model main.int_daily_user_activity ................ [[32mOK[0m in 0.01s]
+[0m22:33:58.247091 [debug] [Thread-4 (]: Finished running node model.signal_ledger.int_daily_user_activity
+[0m22:33:58.246732 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11280d550>]}
+[0m22:33:58.247330 [info ] [Thread-2 (]: 14 of 26 OK created sql view model main.int_user_activation .................... [[32mOK[0m in 0.01s]
+[0m22:33:58.247483 [debug] [Thread-2 (]: Finished running node model.signal_ledger.int_user_activation
+[0m22:33:58.247630 [debug] [Thread-3 (]: Began running node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:33:58.247833 [info ] [Thread-3 (]: 15 of 26 START test not_null_int_daily_user_activity_event_date ................ [RUN]
+[0m22:33:58.247993 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961, now test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2)
+[0m22:33:58.248099 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:33:58.250056 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2"
+[0m22:33:58.247736 [debug] [Thread-1 (]: Began running node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:33:58.250324 [info ] [Thread-1 (]: 16 of 26 START test not_null_int_daily_user_activity_user_id ................... [RUN]
+[0m22:33:58.248203 [debug] [Thread-2 (]: Began running node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:33:58.250588 [info ] [Thread-2 (]: 18 of 26 START test not_null_int_user_activation_user_id ....................... [RUN]
+[0m22:33:58.250725 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.signal_ledger.int_user_activation, now test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb)
+[0m22:33:58.250828 [debug] [Thread-2 (]: Began compiling node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:33:58.252489 [debug] [Thread-2 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb"
+[0m22:33:58.250466 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.unique_stg_app_events_event_id.4259203d55, now test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348)
+[0m22:33:58.250170 [debug] [Thread-4 (]: Began running node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:33:58.252832 [info ] [Thread-4 (]: 17 of 26 START test not_null_int_user_activation_activated_within_7d ........... [RUN]
+[0m22:33:58.252963 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.signal_ledger.int_daily_user_activity, now test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047)
+[0m22:33:58.253062 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:33:58.254957 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047"
+[0m22:33:58.252627 [debug] [Thread-3 (]: Began executing node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:33:58.252734 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:33:58.257410 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348"
+[0m22:33:58.257526 [debug] [Thread-2 (]: Began executing node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:33:58.255478 [debug] [Thread-3 (]: Writing runtime sql for node "test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2"
+[0m22:33:58.258016 [debug] [Thread-2 (]: Writing runtime sql for node "test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb"
+[0m22:33:58.258307 [debug] [Thread-1 (]: Began executing node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:33:58.258755 [debug] [Thread-1 (]: Writing runtime sql for node "test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348"
+[0m22:33:58.258166 [debug] [Thread-4 (]: Began executing node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:33:58.259452 [debug] [Thread-4 (]: Writing runtime sql for node "test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047"
+[0m22:33:58.258884 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2"
+[0m22:33:58.259596 [debug] [Thread-3 (]: On test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2: BEGIN
+[0m22:33:58.259719 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:33:58.259827 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348"
+[0m22:33:58.260006 [debug] [Thread-1 (]: On test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348: BEGIN
+[0m22:33:58.260113 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:58.260215 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047"
+[0m22:33:58.259040 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb"
+[0m22:33:58.260471 [debug] [Thread-2 (]: On test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb: BEGIN
+[0m22:33:58.260736 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:33:58.260656 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.260879 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348"
+[0m22:33:58.260985 [debug] [Thread-1 (]: On test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from "signal_ledger"."main"."int_daily_user_activity"
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.260576 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.261232 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2"
+[0m22:33:58.261326 [debug] [Thread-3 (]: On test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_date
+from "signal_ledger"."main"."int_daily_user_activity"
+where event_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.260361 [debug] [Thread-4 (]: On test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047: BEGIN
+[0m22:33:58.261478 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m22:33:58.261137 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.261633 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb"
+[0m22:33:58.261738 [debug] [Thread-2 (]: On test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select user_id
+from "signal_ledger"."main"."int_user_activation"
+where user_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.261992 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.262179 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047"
+[0m22:33:58.262273 [debug] [Thread-4 (]: On test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select activated_within_7d
+from "signal_ledger"."main"."int_user_activation"
+where activated_within_7d is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.261858 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.262089 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.262792 [debug] [Thread-1 (]: On test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348: ROLLBACK
+[0m22:33:58.262936 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.263310 [debug] [Thread-3 (]: On test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2: ROLLBACK
+[0m22:33:58.263422 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.263788 [debug] [Thread-2 (]: On test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb: ROLLBACK
+[0m22:33:58.263932 [debug] [Thread-1 (]: On test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348: Close
+[0m22:33:58.264454 [info ] [Thread-1 (]: 16 of 26 PASS not_null_int_daily_user_activity_user_id ......................... [[32mPASS[0m in 0.01s]
+[0m22:33:58.264709 [debug] [Thread-1 (]: Finished running node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:33:58.264912 [debug] [Thread-1 (]: Began running node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:33:58.265014 [info ] [Thread-1 (]: 19 of 26 START test unique_int_user_activation_user_id ......................... [RUN]
+[0m22:33:58.265135 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348, now test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6)
+[0m22:33:58.265261 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:33:58.267267 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6"
+[0m22:33:58.264253 [debug] [Thread-4 (]: On test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047: ROLLBACK
+[0m22:33:58.264572 [debug] [Thread-3 (]: On test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2: Close
+[0m22:33:58.264802 [debug] [Thread-2 (]: On test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb: Close
+[0m22:33:58.267508 [info ] [Thread-3 (]: 15 of 26 PASS not_null_int_daily_user_activity_event_date ...................... [[32mPASS[0m in 0.02s]
+[0m22:33:58.267719 [debug] [Thread-3 (]: Finished running node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:33:58.267886 [debug] [Thread-3 (]: Began running node model.signal_ledger.mart_daily_product_metrics
+[0m22:33:58.268197 [info ] [Thread-3 (]: 20 of 26 START sql table model main.mart_daily_product_metrics ................. [RUN]
+[0m22:33:58.268330 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2, now model.signal_ledger.mart_daily_product_metrics)
+[0m22:33:58.268426 [debug] [Thread-3 (]: Began compiling node model.signal_ledger.mart_daily_product_metrics
+[0m22:33:58.269028 [debug] [Thread-3 (]: Writing injected SQL for node "model.signal_ledger.mart_daily_product_metrics"
+[0m22:33:58.268043 [info ] [Thread-2 (]: 18 of 26 PASS not_null_int_user_activation_user_id ............................. [[32mPASS[0m in 0.02s]
+[0m22:33:58.269319 [debug] [Thread-2 (]: Finished running node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:33:58.268525 [debug] [Thread-4 (]: On test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047: Close
+[0m22:33:58.269144 [debug] [Thread-1 (]: Began executing node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:33:58.269816 [debug] [Thread-1 (]: Writing runtime sql for node "test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6"
+[0m22:33:58.270006 [info ] [Thread-4 (]: 17 of 26 PASS not_null_int_user_activation_activated_within_7d ................. [[32mPASS[0m in 0.02s]
+[0m22:33:58.270198 [debug] [Thread-4 (]: Finished running node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:33:58.270321 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6"
+[0m22:33:58.270433 [debug] [Thread-1 (]: On test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6: BEGIN
+[0m22:33:58.270521 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:58.270661 [debug] [Thread-3 (]: Began executing node model.signal_ledger.mart_daily_product_metrics
+[0m22:33:58.277182 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m22:33:58.282453 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6"
+[0m22:33:58.282562 [debug] [Thread-1 (]: On test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    user_id as unique_field,
+    count(*) as n_records
+
+from "signal_ledger"."main"."int_user_activation"
+where user_id is not null
+group by user_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.282337 [debug] [Thread-3 (]: Writing runtime sql for node "model.signal_ledger.mart_daily_product_metrics"
+[0m22:33:58.282909 [debug] [Thread-3 (]: Using duckdb connection "model.signal_ledger.mart_daily_product_metrics"
+[0m22:33:58.283009 [debug] [Thread-3 (]: On model.signal_ledger.mart_daily_product_metrics: BEGIN
+[0m22:33:58.283096 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:33:58.283257 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.283354 [debug] [Thread-3 (]: Using duckdb connection "model.signal_ledger.mart_daily_product_metrics"
+[0m22:33:58.283453 [debug] [Thread-3 (]: On model.signal_ledger.mart_daily_product_metrics: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.mart_daily_product_metrics"} */
+
+    
+
+    create  table
+      "signal_ledger"."main"."mart_daily_product_metrics__dbt_tmp"
+  
+    
+    as (
+      with activity as (
+    select *
+    from "signal_ledger"."main"."int_daily_user_activity"
+),
+daily as (
+    select
+        event_date,
+        count(distinct case when qualifying_active_events > 0 then user_id end) as daily_active_users,
+        sum(meaningful_actions) as meaningful_actions,
+        sum(meaningful_actions) * 1.0
+          / nullif(count(distinct case when qualifying_active_events > 0 then user_id end), 0)
+          as meaningful_actions_per_active_user
+    from activity
+    group by event_date
+)
+select
+    event_date,
+    daily_active_users,
+    meaningful_actions,
+    round(meaningful_actions_per_active_user, 2) as meaningful_actions_per_active_user
+from daily
+    );
+    
+  
+[0m22:33:58.283848 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.284358 [debug] [Thread-1 (]: On test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6: ROLLBACK
+[0m22:33:58.284515 [debug] [Thread-1 (]: On test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6: Close
+[0m22:33:58.284708 [info ] [Thread-1 (]: 19 of 26 PASS unique_int_user_activation_user_id ............................... [[32mPASS[0m in 0.02s]
+[0m22:33:58.284874 [debug] [Thread-1 (]: Finished running node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:33:58.285073 [debug] [Thread-2 (]: Began running node model.signal_ledger.mart_activation_by_cohort
+[0m22:33:58.285238 [info ] [Thread-2 (]: 21 of 26 START sql table model main.mart_activation_by_cohort .................. [RUN]
+[0m22:33:58.285372 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb, now model.signal_ledger.mart_activation_by_cohort)
+[0m22:33:58.285479 [debug] [Thread-2 (]: Began compiling node model.signal_ledger.mart_activation_by_cohort
+[0m22:33:58.286162 [debug] [Thread-2 (]: Writing injected SQL for node "model.signal_ledger.mart_activation_by_cohort"
+[0m22:33:58.285575 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m22:33:58.286813 [debug] [Thread-3 (]: Using duckdb connection "model.signal_ledger.mart_daily_product_metrics"
+[0m22:33:58.286922 [debug] [Thread-3 (]: On model.signal_ledger.mart_daily_product_metrics: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.mart_daily_product_metrics"} */
+alter table "signal_ledger"."main"."mart_daily_product_metrics__dbt_tmp" rename to "mart_daily_product_metrics"
+[0m22:33:58.287103 [debug] [Thread-2 (]: Began executing node model.signal_ledger.mart_activation_by_cohort
+[0m22:33:58.289025 [debug] [Thread-2 (]: Writing runtime sql for node "model.signal_ledger.mart_activation_by_cohort"
+[0m22:33:58.289131 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m22:33:58.290830 [debug] [Thread-3 (]: On model.signal_ledger.mart_daily_product_metrics: COMMIT
+[0m22:33:58.290936 [debug] [Thread-3 (]: Using duckdb connection "model.signal_ledger.mart_daily_product_metrics"
+[0m22:33:58.291032 [debug] [Thread-3 (]: On model.signal_ledger.mart_daily_product_metrics: COMMIT
+[0m22:33:58.291210 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.mart_activation_by_cohort"
+[0m22:33:58.291324 [debug] [Thread-2 (]: On model.signal_ledger.mart_activation_by_cohort: BEGIN
+[0m22:33:58.291424 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:33:58.291513 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.291979 [debug] [Thread-3 (]: Using duckdb connection "model.signal_ledger.mart_daily_product_metrics"
+[0m22:33:58.292071 [debug] [Thread-3 (]: On model.signal_ledger.mart_daily_product_metrics: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.mart_daily_product_metrics"} */
+
+      drop table if exists "signal_ledger"."main"."mart_daily_product_metrics__dbt_backup" cascade
+    
+[0m22:33:58.292164 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.292303 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.mart_activation_by_cohort"
+[0m22:33:58.292399 [debug] [Thread-2 (]: On model.signal_ledger.mart_activation_by_cohort: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.mart_activation_by_cohort"} */
+
+    
+
+    create  table
+      "signal_ledger"."main"."mart_activation_by_cohort__dbt_tmp"
+  
+    
+    as (
+      select
+    signup_date as cohort_date,
+    acquisition_channel,
+    country,
+    count(*) as signed_up_users,
+    sum(case when activated_within_7d then 1 else 0 end) as activated_users_7d,
+    round(
+        sum(case when activated_within_7d then 1.0 else 0.0 end) / nullif(count(*), 0),
+        4
+    ) as activation_rate_7d
+from "signal_ledger"."main"."int_user_activation"
+group by signup_date, acquisition_channel, country
+    );
+    
+  
+[0m22:33:58.292493 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.292870 [debug] [Thread-3 (]: On model.signal_ledger.mart_daily_product_metrics: Close
+[0m22:33:58.293036 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137a9af0>]}
+[0m22:33:58.293213 [info ] [Thread-3 (]: 20 of 26 OK created sql table model main.mart_daily_product_metrics ............ [[32mOK[0m in 0.02s]
+[0m22:33:58.293373 [debug] [Thread-3 (]: Finished running node model.signal_ledger.mart_daily_product_metrics
+[0m22:33:58.293580 [debug] [Thread-1 (]: Began running node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:33:58.293923 [info ] [Thread-1 (]: 23 of 26 START test not_null_mart_daily_product_metrics_event_date ............. [RUN]
+[0m22:33:58.294074 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6, now test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789)
+[0m22:33:58.294188 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:33:58.296101 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789"
+[0m22:33:58.293698 [debug] [Thread-3 (]: Began running node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:33:58.293803 [debug] [Thread-4 (]: Began running node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:33:58.296526 [info ] [Thread-4 (]: 22 of 26 START test not_null_mart_daily_product_metrics_daily_active_users ..... [RUN]
+[0m22:33:58.296753 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047, now test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275)
+[0m22:33:58.296843 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:33:58.298597 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275"
+[0m22:33:58.296374 [info ] [Thread-3 (]: 24 of 26 START test unique_mart_daily_product_metrics_event_date ............... [RUN]
+[0m22:33:58.296640 [debug] [Thread-1 (]: Began executing node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:33:58.296245 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m22:33:58.299836 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.mart_activation_by_cohort"
+[0m22:33:58.299954 [debug] [Thread-2 (]: On model.signal_ledger.mart_activation_by_cohort: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.mart_activation_by_cohort"} */
+alter table "signal_ledger"."main"."mart_activation_by_cohort__dbt_tmp" rename to "mart_activation_by_cohort"
+[0m22:33:58.298764 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.signal_ledger.mart_daily_product_metrics, now test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926)
+[0m22:33:58.300250 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:33:58.299256 [debug] [Thread-1 (]: Writing runtime sql for node "test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789"
+[0m22:33:58.300076 [debug] [Thread-4 (]: Began executing node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:33:58.302744 [debug] [Thread-4 (]: Writing runtime sql for node "test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275"
+[0m22:33:58.302309 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m22:33:58.303262 [debug] [Thread-2 (]: On model.signal_ledger.mart_activation_by_cohort: COMMIT
+[0m22:33:58.302161 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926"
+[0m22:33:58.303512 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275"
+[0m22:33:58.303717 [debug] [Thread-4 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275: BEGIN
+[0m22:33:58.303806 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m22:33:58.303370 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.mart_activation_by_cohort"
+[0m22:33:58.303970 [debug] [Thread-2 (]: On model.signal_ledger.mart_activation_by_cohort: COMMIT
+[0m22:33:58.304110 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.304222 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275"
+[0m22:33:58.304446 [debug] [Thread-4 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select daily_active_users
+from "signal_ledger"."main"."mart_daily_product_metrics"
+where daily_active_users is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.303623 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789"
+[0m22:33:58.304695 [debug] [Thread-1 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789: BEGIN
+[0m22:33:58.304789 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:33:58.304339 [debug] [Thread-3 (]: Began executing node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:33:58.305332 [debug] [Thread-3 (]: Writing runtime sql for node "test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926"
+[0m22:33:58.305441 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.304553 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.306042 [debug] [Thread-2 (]: Using duckdb connection "model.signal_ledger.mart_activation_by_cohort"
+[0m22:33:58.306593 [debug] [Thread-2 (]: On model.signal_ledger.mart_activation_by_cohort: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "model.signal_ledger.mart_activation_by_cohort"} */
+
+      drop table if exists "signal_ledger"."main"."mart_activation_by_cohort__dbt_backup" cascade
+    
+[0m22:33:58.306483 [debug] [Thread-4 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275: ROLLBACK
+[0m22:33:58.305579 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.307029 [debug] [Thread-1 (]: Using duckdb connection "test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789"
+[0m22:33:58.307297 [debug] [Thread-1 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select event_date
+from "signal_ledger"."main"."mart_daily_product_metrics"
+where event_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.307158 [debug] [Thread-4 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275: Close
+[0m22:33:58.306886 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926"
+[0m22:33:58.307794 [debug] [Thread-3 (]: On test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926: BEGIN
+[0m22:33:58.307988 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m22:33:58.307897 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.307411 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.308399 [debug] [Thread-2 (]: On model.signal_ledger.mart_activation_by_cohort: Close
+[0m22:33:58.307655 [info ] [Thread-4 (]: 22 of 26 PASS not_null_mart_daily_product_metrics_daily_active_users ........... [[32mPASS[0m in 0.01s]
+[0m22:33:58.308921 [debug] [Thread-4 (]: Finished running node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:33:58.309071 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7ea25155-52fd-472d-a5a8-0417bf2654a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137a8b30>]}
+[0m22:33:58.309393 [info ] [Thread-2 (]: 21 of 26 OK created sql table model main.mart_activation_by_cohort ............. [[32mOK[0m in 0.02s]
+[0m22:33:58.309550 [debug] [Thread-2 (]: Finished running node model.signal_ledger.mart_activation_by_cohort
+[0m22:33:58.308765 [debug] [Thread-1 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789: ROLLBACK
+[0m22:33:58.309217 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.309962 [debug] [Thread-3 (]: Using duckdb connection "test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926"
+[0m22:33:58.310068 [debug] [Thread-3 (]: On test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    event_date as unique_field,
+    count(*) as n_records
+
+from "signal_ledger"."main"."mart_daily_product_metrics"
+where event_date is not null
+group by event_date
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.309834 [debug] [Thread-2 (]: Began running node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:33:58.310323 [info ] [Thread-2 (]: 26 of 26 START test not_null_mart_activation_by_cohort_cohort_date ............. [RUN]
+[0m22:33:58.310455 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.signal_ledger.mart_activation_by_cohort, now test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60)
+[0m22:33:58.310558 [debug] [Thread-2 (]: Began compiling node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:33:58.312530 [debug] [Thread-2 (]: Writing injected SQL for node "test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60"
+[0m22:33:58.310216 [debug] [Thread-1 (]: On test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789: Close
+[0m22:33:58.309742 [debug] [Thread-4 (]: Began running node test.signal_ledger.assert_metric_invariants
+[0m22:33:58.312986 [info ] [Thread-4 (]: 25 of 26 START test assert_metric_invariants ................................... [RUN]
+[0m22:33:58.313115 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275, now test.signal_ledger.assert_metric_invariants)
+[0m22:33:58.313218 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.assert_metric_invariants
+[0m22:33:58.313923 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.assert_metric_invariants"
+[0m22:33:58.312845 [info ] [Thread-1 (]: 23 of 26 PASS not_null_mart_daily_product_metrics_event_date ................... [[32mPASS[0m in 0.02s]
+[0m22:33:58.312651 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m22:33:58.313320 [debug] [Thread-2 (]: Began executing node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:33:58.314581 [debug] [Thread-2 (]: Writing runtime sql for node "test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60"
+[0m22:33:58.314911 [debug] [Thread-3 (]: On test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926: ROLLBACK
+[0m22:33:58.314110 [debug] [Thread-1 (]: Finished running node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:33:58.315096 [debug] [Thread-4 (]: Began executing node test.signal_ledger.assert_metric_invariants
+[0m22:33:58.315569 [debug] [Thread-4 (]: Writing runtime sql for node "test.signal_ledger.assert_metric_invariants"
+[0m22:33:58.315693 [debug] [Thread-3 (]: On test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926: Close
+[0m22:33:58.315827 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60"
+[0m22:33:58.316133 [debug] [Thread-2 (]: On test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60: BEGIN
+[0m22:33:58.316245 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m22:33:58.316004 [info ] [Thread-3 (]: 24 of 26 PASS unique_mart_daily_product_metrics_event_date ..................... [[32mPASS[0m in 0.02s]
+[0m22:33:58.316437 [debug] [Thread-3 (]: Finished running node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:33:58.316555 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.assert_metric_invariants"
+[0m22:33:58.316665 [debug] [Thread-4 (]: On test.signal_ledger.assert_metric_invariants: BEGIN
+[0m22:33:58.316852 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m22:33:58.316764 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m22:33:58.316983 [debug] [Thread-2 (]: Using duckdb connection "test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60"
+[0m22:33:58.317076 [debug] [Thread-2 (]: On test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select cohort_date
+from "signal_ledger"."main"."mart_activation_by_cohort"
+where cohort_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.317201 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.317295 [debug] [Thread-4 (]: Using duckdb connection "test.signal_ledger.assert_metric_invariants"
+[0m22:33:58.317397 [debug] [Thread-4 (]: On test.signal_ledger.assert_metric_invariants: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "node_id": "test.signal_ledger.assert_metric_invariants"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  -- Fail the build if core metric invariants are broken.
+-- DAU must be non-negative, and activation counts/rates must be logically valid.
+select
+    'negative_dau' as failure_reason,
+    cast(event_date as varchar) as affected_key
+from "signal_ledger"."main"."mart_daily_product_metrics"
+where daily_active_users < 0
+
+union all
+
+select
+    'invalid_activation_rate' as failure_reason,
+    cast(cohort_date as varchar) as affected_key
+from "signal_ledger"."main"."mart_activation_by_cohort"
+where activation_rate_7d < 0
+   or activation_rate_7d > 1
+   or activated_users_7d > signed_up_users
+  
+  
+      
+    ) dbt_internal_test
+[0m22:33:58.317536 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.317872 [debug] [Thread-2 (]: On test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60: ROLLBACK
+[0m22:33:58.317990 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m22:33:58.318111 [debug] [Thread-2 (]: On test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60: Close
+[0m22:33:58.318453 [debug] [Thread-4 (]: On test.signal_ledger.assert_metric_invariants: ROLLBACK
+[0m22:33:58.318624 [info ] [Thread-2 (]: 26 of 26 PASS not_null_mart_activation_by_cohort_cohort_date ................... [[32mPASS[0m in 0.01s]
+[0m22:33:58.318825 [debug] [Thread-2 (]: Finished running node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:33:58.318940 [debug] [Thread-4 (]: On test.signal_ledger.assert_metric_invariants: Close
+[0m22:33:58.319102 [info ] [Thread-4 (]: 25 of 26 PASS assert_metric_invariants ......................................... [[32mPASS[0m in 0.01s]
+[0m22:33:58.319250 [debug] [Thread-4 (]: Finished running node test.signal_ledger.assert_metric_invariants
+[0m22:33:58.319718 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:58.319802 [debug] [MainThread]: On master: BEGIN
+[0m22:33:58.319869 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:33:58.320007 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:58.320082 [debug] [MainThread]: On master: COMMIT
+[0m22:33:58.320148 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:33:58.320211 [debug] [MainThread]: On master: COMMIT
+[0m22:33:58.320325 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m22:33:58.320396 [debug] [MainThread]: On master: Close
+[0m22:33:58.320490 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:33:58.320559 [debug] [MainThread]: Connection 'test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789' was properly closed.
+[0m22:33:58.320623 [debug] [MainThread]: Connection 'test.signal_ledger.assert_metric_invariants' was properly closed.
+[0m22:33:58.320684 [debug] [MainThread]: Connection 'test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926' was properly closed.
+[0m22:33:58.320744 [debug] [MainThread]: Connection 'test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60' was properly closed.
+[0m22:33:58.320840 [info ] [MainThread]: 
+[0m22:33:58.320936 [info ] [MainThread]: Finished running 2 seeds, 2 table models, 18 data tests, 4 view models in 0 hours 0 minutes and 0.24 seconds (0.24s).
+[0m22:33:58.321844 [debug] [MainThread]: Command end result
+[0m22:33:58.333517 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:33:58.334505 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:33:58.335529 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:33:58.338051 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/run_results.json
+[0m22:33:58.338150 [info ] [MainThread]: 
+[0m22:33:58.338268 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:33:58.338355 [info ] [MainThread]: 
+[0m22:33:58.338453 [info ] [MainThread]: Done. PASS=26 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=26
+[0m22:33:58.339751 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 0.5786163, "process_in_blocks": "0", "process_kernel_time": 0.168508, "process_mem_max_rss": "220545024", "process_out_blocks": "0", "process_user_time": 1.060079}
+[0m22:33:58.339925 [debug] [MainThread]: Command `dbt build` succeeded at 22:33:58.339895 after 0.58 seconds
+[0m22:33:58.340138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11272bd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113749b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11374a330>]}
+[0m22:33:58.340263 [debug] [MainThread]: Flushing usage events
+[0m22:33:58.767626 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:34:06.716059 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11307f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115426850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115426d50>]}
+
+
+============================== 22:34:06.717657 | d3aa0645-b05c-456a-8e30-25549d574016 ==============================
+[0m22:34:06.717657 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:34:06.717876 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'maximum_seed_size_mib': '1', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'empty': 'None', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'fail_fast': 'False', 'printer_width': '80', 'quiet': 'False', 'log_path': '/Users/sanchita/Projects (personal)/signal_ledger_dbt/logs', 'log_format': 'default', 'use_experimental_parser': 'False', 'write_json': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/Users/sanchita/Projects (personal)/signal_ledger_dbt', 'log_cache_events': 'False', 'invocation_command': 'dbt docs generate', 'static_parser': 'True'}
+[0m22:34:06.818625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd3aa0645-b05c-456a-8e30-25549d574016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11529b6f0>]}
+[0m22:34:06.843508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd3aa0645-b05c-456a-8e30-25549d574016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11510a030>]}
+[0m22:34:06.844289 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m22:34:06.875544 [debug] [MainThread]: checksum: 736f8253bf1e5e1cf9c769facf4e8bd36f24dc656845a15d713b60e177918854, vars: {}, profile: signal_ledger, target: dev, version: 1.12.5
+[0m22:34:06.927669 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:34:06.927828 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:34:06.927916 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:34:06.931436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd3aa0645-b05c-456a-8e30-25549d574016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115f02e50>]}
+[0m22:34:06.954551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd3aa0645-b05c-456a-8e30-25549d574016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115db0320>]}
+[0m22:34:06.954734 [info ] [MainThread]: Found 6 models, 18 data tests, 2 seeds, 2 sources, 500 macros
+[0m22:34:06.954857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3aa0645-b05c-456a-8e30-25549d574016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117037a10>]}
+[0m22:34:06.955830 [info ] [MainThread]: 
+[0m22:34:06.955984 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:34:06.956079 [info ] [MainThread]: 
+[0m22:34:06.956252 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:34:06.957802 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_signal_ledger_main'
+[0m22:34:06.979027 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger_main"
+[0m22:34:06.979184 [debug] [ThreadPool]: On list_signal_ledger_main: BEGIN
+[0m22:34:06.979275 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:34:06.984492 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:34:06.984622 [debug] [ThreadPool]: Using duckdb connection "list_signal_ledger_main"
+[0m22:34:06.984715 [debug] [ThreadPool]: On list_signal_ledger_main: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "list_signal_ledger_main"} */
+select
+      'signal_ledger' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'signal_ledger'
+  
+[0m22:34:06.986235 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m22:34:06.986735 [debug] [ThreadPool]: On list_signal_ledger_main: ROLLBACK
+[0m22:34:06.986896 [debug] [ThreadPool]: On list_signal_ledger_main: Close
+[0m22:34:06.987439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd3aa0645-b05c-456a-8e30-25549d574016', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1172fc530>]}
+[0m22:34:06.988296 [debug] [Thread-3 (]: Began running node seed.signal_ledger.app_events
+[0m22:34:06.988774 [debug] [Thread-3 (]: Acquiring new duckdb connection 'seed.signal_ledger.app_events'
+[0m22:34:06.988881 [debug] [Thread-3 (]: Began compiling node seed.signal_ledger.app_events
+[0m22:34:06.990436 [debug] [Thread-3 (]: Began executing node seed.signal_ledger.app_events
+[0m22:34:06.988431 [debug] [Thread-2 (]: Began running node model.signal_ledger.stg_app_users
+[0m22:34:06.988541 [debug] [Thread-4 (]: Began running node seed.signal_ledger.app_users
+[0m22:34:06.988631 [debug] [Thread-1 (]: Began running node model.signal_ledger.stg_app_events
+[0m22:34:06.991037 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_signal_ledger_main, now model.signal_ledger.stg_app_events)
+[0m22:34:06.991136 [debug] [Thread-1 (]: Began compiling node model.signal_ledger.stg_app_events
+[0m22:34:06.991773 [debug] [Thread-1 (]: Writing injected SQL for node "model.signal_ledger.stg_app_events"
+[0m22:34:06.990651 [debug] [Thread-3 (]: Finished running node seed.signal_ledger.app_events
+[0m22:34:06.990792 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.signal_ledger.stg_app_users'
+[0m22:34:06.991969 [debug] [Thread-2 (]: Began compiling node model.signal_ledger.stg_app_users
+[0m22:34:06.992533 [debug] [Thread-2 (]: Writing injected SQL for node "model.signal_ledger.stg_app_users"
+[0m22:34:06.990918 [debug] [Thread-4 (]: Acquiring new duckdb connection 'seed.signal_ledger.app_users'
+[0m22:34:06.992705 [debug] [Thread-4 (]: Began compiling node seed.signal_ledger.app_users
+[0m22:34:06.993344 [debug] [Thread-4 (]: Began executing node seed.signal_ledger.app_users
+[0m22:34:06.993561 [debug] [Thread-4 (]: Finished running node seed.signal_ledger.app_users
+[0m22:34:06.992830 [debug] [Thread-1 (]: Began executing node model.signal_ledger.stg_app_events
+[0m22:34:06.993904 [debug] [Thread-1 (]: Finished running node model.signal_ledger.stg_app_events
+[0m22:34:06.993672 [debug] [Thread-2 (]: Began executing node model.signal_ledger.stg_app_users
+[0m22:34:06.994153 [debug] [Thread-2 (]: Finished running node model.signal_ledger.stg_app_users
+[0m22:34:06.994512 [debug] [Thread-2 (]: Began running node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:34:06.994781 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.signal_ledger.stg_app_users, now test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048)
+[0m22:34:06.994894 [debug] [Thread-2 (]: Began compiling node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:34:06.999010 [debug] [Thread-2 (]: Writing injected SQL for node "test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048"
+[0m22:34:06.994390 [debug] [Thread-3 (]: Began running node model.signal_ledger.int_daily_user_activity
+[0m22:34:06.994622 [debug] [Thread-4 (]: Began running node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:34:06.994281 [debug] [Thread-1 (]: Began running node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:34:06.999423 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.signal_ledger.stg_app_events, now test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699)
+[0m22:34:06.999546 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:34:07.001280 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699"
+[0m22:34:06.999281 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.signal_ledger.app_users, now test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3)
+[0m22:34:07.001523 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:34:06.999169 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly seed.signal_ledger.app_events, now model.signal_ledger.int_daily_user_activity)
+[0m22:34:07.001387 [debug] [Thread-2 (]: Began executing node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:34:07.007848 [debug] [Thread-3 (]: Began compiling node model.signal_ledger.int_daily_user_activity
+[0m22:34:07.010516 [debug] [Thread-3 (]: Writing injected SQL for node "model.signal_ledger.int_daily_user_activity"
+[0m22:34:07.009840 [debug] [Thread-1 (]: Began executing node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:34:07.010751 [debug] [Thread-1 (]: Finished running node test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699
+[0m22:34:07.009714 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3"
+[0m22:34:07.010028 [debug] [Thread-2 (]: Finished running node test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048
+[0m22:34:07.011134 [debug] [Thread-2 (]: Began running node model.signal_ledger.int_user_activation
+[0m22:34:07.011273 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_stg_app_events_user_id.2f8db66048, now model.signal_ledger.int_user_activation)
+[0m22:34:07.011385 [debug] [Thread-2 (]: Began compiling node model.signal_ledger.int_user_activation
+[0m22:34:07.011946 [debug] [Thread-2 (]: Writing injected SQL for node "model.signal_ledger.int_user_activation"
+[0m22:34:07.010863 [debug] [Thread-1 (]: Began running node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:34:07.011021 [debug] [Thread-3 (]: Began executing node model.signal_ledger.int_daily_user_activity
+[0m22:34:07.012405 [debug] [Thread-3 (]: Finished running node model.signal_ledger.int_daily_user_activity
+[0m22:34:07.012521 [debug] [Thread-3 (]: Began running node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:34:07.012634 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.signal_ledger.int_daily_user_activity, now test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4)
+[0m22:34:07.012848 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:34:07.018808 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4"
+[0m22:34:07.012065 [debug] [Thread-4 (]: Began executing node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:34:07.012223 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_stg_app_events_event_id.1065c0b699, now test.signal_ledger.unique_stg_app_events_event_id.4259203d55)
+[0m22:34:07.012752 [debug] [Thread-2 (]: Began executing node model.signal_ledger.int_user_activation
+[0m22:34:07.019402 [debug] [Thread-2 (]: Finished running node model.signal_ledger.int_user_activation
+[0m22:34:07.019513 [debug] [Thread-2 (]: Began running node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:34:07.019624 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.signal_ledger.int_user_activation, now test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3)
+[0m22:34:07.019854 [debug] [Thread-2 (]: Began compiling node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:34:07.021792 [debug] [Thread-2 (]: Writing injected SQL for node "test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3"
+[0m22:34:07.019199 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:34:07.019729 [debug] [Thread-3 (]: Began executing node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:34:07.019076 [debug] [Thread-4 (]: Finished running node test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3
+[0m22:34:07.024712 [debug] [Thread-4 (]: Began running node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:34:07.024865 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.accepted_values_stg_app_events_event_name__app_open__profile_complete__content_view__message_sent__reaction_added.f1584752d3, now test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961)
+[0m22:34:07.025068 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:34:07.030069 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961"
+[0m22:34:07.024570 [debug] [Thread-3 (]: Finished running node test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4
+[0m22:34:07.024346 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.unique_stg_app_events_event_id.4259203d55"
+[0m22:34:07.024971 [debug] [Thread-2 (]: Began executing node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:34:07.030505 [debug] [Thread-2 (]: Finished running node test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3
+[0m22:34:07.030619 [debug] [Thread-2 (]: Began running node model.signal_ledger.mart_daily_product_metrics
+[0m22:34:07.030844 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_stg_app_users_user_id.43abb0a3f3, now model.signal_ledger.mart_daily_product_metrics)
+[0m22:34:07.030950 [debug] [Thread-2 (]: Began compiling node model.signal_ledger.mart_daily_product_metrics
+[0m22:34:07.031461 [debug] [Thread-2 (]: Writing injected SQL for node "model.signal_ledger.mart_daily_product_metrics"
+[0m22:34:07.030242 [debug] [Thread-3 (]: Began running node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:34:07.031722 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.signal_ledger.accepted_values_stg_app_users_acquisition_channel__organic__paid_social__paid_search__referral.1b67705cb4, now test.signal_ledger.unique_stg_app_users_user_id.00d7880dff)
+[0m22:34:07.031840 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:34:07.030717 [debug] [Thread-4 (]: Began executing node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:34:07.033753 [debug] [Thread-4 (]: Finished running node test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961
+[0m22:34:07.031611 [debug] [Thread-1 (]: Began executing node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:34:07.034026 [debug] [Thread-1 (]: Finished running node test.signal_ledger.unique_stg_app_events_event_id.4259203d55
+[0m22:34:07.034178 [debug] [Thread-1 (]: Began running node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:34:07.034322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.unique_stg_app_events_event_id.4259203d55, now test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348)
+[0m22:34:07.034435 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:34:07.036266 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348"
+[0m22:34:07.033860 [debug] [Thread-4 (]: Began running node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:34:07.033468 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.unique_stg_app_users_user_id.00d7880dff"
+[0m22:34:07.033582 [debug] [Thread-2 (]: Began executing node model.signal_ledger.mart_daily_product_metrics
+[0m22:34:07.036670 [debug] [Thread-2 (]: Finished running node model.signal_ledger.mart_daily_product_metrics
+[0m22:34:07.036801 [debug] [Thread-2 (]: Began running node model.signal_ledger.mart_activation_by_cohort
+[0m22:34:07.037056 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.signal_ledger.mart_daily_product_metrics, now model.signal_ledger.mart_activation_by_cohort)
+[0m22:34:07.037293 [debug] [Thread-2 (]: Began compiling node model.signal_ledger.mart_activation_by_cohort
+[0m22:34:07.037736 [debug] [Thread-2 (]: Writing injected SQL for node "model.signal_ledger.mart_activation_by_cohort"
+[0m22:34:07.036911 [debug] [Thread-1 (]: Began executing node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:34:07.036431 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.relationships_stg_app_events_user_id__user_id__ref_stg_app_users_.bd90a46961, now test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2)
+[0m22:34:07.038034 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:34:07.039709 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2"
+[0m22:34:07.037195 [debug] [Thread-3 (]: Began executing node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:34:07.037939 [debug] [Thread-1 (]: Finished running node test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348
+[0m22:34:07.040188 [debug] [Thread-1 (]: Began running node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:34:07.040330 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_daily_user_activity_user_id.0860d1a348, now test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047)
+[0m22:34:07.040516 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:34:07.042218 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047"
+[0m22:34:07.040061 [debug] [Thread-2 (]: Began executing node model.signal_ledger.mart_activation_by_cohort
+[0m22:34:07.040430 [debug] [Thread-4 (]: Began executing node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:34:07.039946 [debug] [Thread-3 (]: Finished running node test.signal_ledger.unique_stg_app_users_user_id.00d7880dff
+[0m22:34:07.043460 [debug] [Thread-3 (]: Began running node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:34:07.043623 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.signal_ledger.unique_stg_app_users_user_id.00d7880dff, now test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb)
+[0m22:34:07.043842 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:34:07.045943 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb"
+[0m22:34:07.043742 [debug] [Thread-1 (]: Began executing node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:34:07.042821 [debug] [Thread-2 (]: Finished running node model.signal_ledger.mart_activation_by_cohort
+[0m22:34:07.043228 [debug] [Thread-4 (]: Finished running node test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2
+[0m22:34:07.046507 [debug] [Thread-4 (]: Began running node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:34:07.046627 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_daily_user_activity_event_date.839160e6e2, now test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275)
+[0m22:34:07.046834 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:34:07.048686 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275"
+[0m22:34:07.046316 [debug] [Thread-2 (]: Began running node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:34:07.046201 [debug] [Thread-1 (]: Finished running node test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047
+[0m22:34:07.046735 [debug] [Thread-3 (]: Began executing node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:34:07.049186 [debug] [Thread-3 (]: Finished running node test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb
+[0m22:34:07.049395 [debug] [Thread-3 (]: Began running node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:34:07.049501 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_user_activation_user_id.f87aa123eb, now test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926)
+[0m22:34:07.049614 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:34:07.051299 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926"
+[0m22:34:07.048837 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.signal_ledger.mart_activation_by_cohort, now test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6)
+[0m22:34:07.049293 [debug] [Thread-4 (]: Began executing node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:34:07.048968 [debug] [Thread-1 (]: Began running node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:34:07.051754 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_int_user_activation_activated_within_7d.ddc5604047, now test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789)
+[0m22:34:07.051882 [debug] [Thread-1 (]: Began compiling node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:34:07.055012 [debug] [Thread-1 (]: Writing injected SQL for node "test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789"
+[0m22:34:07.051627 [debug] [Thread-4 (]: Finished running node test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275
+[0m22:34:07.055275 [debug] [Thread-4 (]: Began running node test.signal_ledger.assert_metric_invariants
+[0m22:34:07.051441 [debug] [Thread-2 (]: Began compiling node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:34:07.057225 [debug] [Thread-2 (]: Writing injected SQL for node "test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6"
+[0m22:34:07.055391 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.signal_ledger.not_null_mart_daily_product_metrics_daily_active_users.39f03b6275, now test.signal_ledger.assert_metric_invariants)
+[0m22:34:07.055125 [debug] [Thread-3 (]: Began executing node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:34:07.057673 [debug] [Thread-3 (]: Finished running node test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926
+[0m22:34:07.057784 [debug] [Thread-3 (]: Began running node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:34:07.057899 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.signal_ledger.unique_mart_daily_product_metrics_event_date.35fe2b7926, now test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60)
+[0m22:34:07.058094 [debug] [Thread-3 (]: Began compiling node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:34:07.059755 [debug] [Thread-3 (]: Writing injected SQL for node "test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60"
+[0m22:34:07.058003 [debug] [Thread-2 (]: Began executing node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:34:07.057478 [debug] [Thread-4 (]: Began compiling node test.signal_ledger.assert_metric_invariants
+[0m22:34:07.057340 [debug] [Thread-1 (]: Began executing node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:34:07.060727 [debug] [Thread-1 (]: Finished running node test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789
+[0m22:34:07.060514 [debug] [Thread-4 (]: Writing injected SQL for node "test.signal_ledger.assert_metric_invariants"
+[0m22:34:07.059964 [debug] [Thread-2 (]: Finished running node test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6
+[0m22:34:07.060850 [debug] [Thread-3 (]: Began executing node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:34:07.061100 [debug] [Thread-3 (]: Finished running node test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60
+[0m22:34:07.061414 [debug] [Thread-4 (]: Began executing node test.signal_ledger.assert_metric_invariants
+[0m22:34:07.061585 [debug] [Thread-4 (]: Finished running node test.signal_ledger.assert_metric_invariants
+[0m22:34:07.061960 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:34:07.062047 [debug] [MainThread]: Connection 'test.signal_ledger.not_null_mart_daily_product_metrics_event_date.a037f27789' was properly closed.
+[0m22:34:07.062114 [debug] [MainThread]: Connection 'test.signal_ledger.not_null_mart_activation_by_cohort_cohort_date.a76450cc60' was properly closed.
+[0m22:34:07.062178 [debug] [MainThread]: Connection 'test.signal_ledger.unique_int_user_activation_user_id.8fd96900a6' was properly closed.
+[0m22:34:07.062236 [debug] [MainThread]: Connection 'test.signal_ledger.assert_metric_invariants' was properly closed.
+[0m22:34:07.063104 [debug] [MainThread]: Command end result
+[0m22:34:07.101954 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:34:07.102994 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:34:07.107556 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:34:07.110139 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/run_results.json
+[0m22:34:07.111511 [debug] [MainThread]: Acquiring new duckdb connection 'generate_catalog'
+[0m22:34:07.111598 [info ] [MainThread]: Building catalog
+[0m22:34:07.114413 [debug] [ThreadPool]: Acquiring new duckdb connection 'signal_ledger.information_schema'
+[0m22:34:07.118101 [debug] [ThreadPool]: Using duckdb connection "signal_ledger.information_schema"
+[0m22:34:07.118284 [debug] [ThreadPool]: On signal_ledger.information_schema: /* {"app": "dbt", "dbt_version": "1.12.5", "profile_name": "signal_ledger", "target_name": "dev", "connection_name": "signal_ledger.information_schema"} */
+
+    
+    with tables as (
+      select *
+    from (
+        select
+            t.database_name as table_database,
+            t.schema_name as table_schema,
+            t.table_name as table_name,
+            'BASE TABLE' as table_type,
+            t.comment as table_comment
+        from duckdb_tables() t
+        where upper(t.database_name) = upper('signal_ledger')
+
+        union all
+
+        select
+            v.database_name as table_database,
+            v.schema_name as table_schema,
+            v.view_name as table_name,
+            'VIEW' as table_type,
+            v.comment as table_comment
+        from duckdb_views() v
+        where upper(v.database_name) = upper('signal_ledger')
+    ) catalog_tables
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('mart_daily_product_metrics')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('app_users')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('app_events')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('int_user_activation')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_app_events')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('mart_activation_by_cohort')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_app_users')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('int_daily_user_activity')
+                ))
+    
+    ),
+    columns as (
+      select *
+    from (
+        select
+            c.database_name as table_database,
+            c.schema_name as table_schema,
+            c.table_name as table_name,
+            c.column_name as column_name,
+            c.column_index as column_index,
+            c.data_type as column_type,
+            c.comment as column_comment
+        from duckdb_columns() c
+        where upper(c.database_name) = upper('signal_ledger')
+    ) catalog_columns
+      
+        where (
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('mart_daily_product_metrics')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('app_users')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('app_events')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('int_user_activation')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_app_events')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('mart_activation_by_cohort')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('stg_app_users')
+                ) or 
+
+                (
+                    upper(table_schema) = upper('main')
+                    and upper(table_name) = upper('int_daily_user_activity')
+                ))
+    
+    )
+    select
+        tables.table_database,
+        tables.table_schema,
+        tables.table_name,
+        tables.table_type,
+        tables.table_comment,
+        columns.column_name,
+        columns.column_index,
+        columns.column_type,
+        columns.column_comment,
+        null as table_owner
+    from tables
+    join columns using (table_database, table_schema, table_name)
+    order by table_schema, table_name, column_index
+  
+  
+[0m22:34:07.118518 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:34:07.123526 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m22:34:07.124600 [debug] [ThreadPool]: On signal_ledger.information_schema: Close
+[0m22:34:07.128468 [debug] [MainThread]: Wrote artifact CatalogArtifact to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/catalog.json
+[0m22:34:07.139544 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:34:07.140522 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:34:07.141343 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:34:07.141434 [info ] [MainThread]: Catalog written to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/catalog.json
+[0m22:34:07.142804 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 0.46335563, "process_in_blocks": "0", "process_kernel_time": 0.148121, "process_mem_max_rss": "193249280", "process_out_blocks": "0", "process_user_time": 0.921627}
+[0m22:34:07.143000 [debug] [MainThread]: Command `dbt docs generate` succeeded at 22:34:07.142972 after 0.46 seconds
+[0m22:34:07.143099 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m22:34:07.143170 [debug] [MainThread]: Connection 'signal_ledger.information_schema' was properly closed.
+[0m22:34:07.143260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117223c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11115c260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1173e36a0>]}
+[0m22:34:07.143365 [debug] [MainThread]: Flushing usage events
+[0m22:34:07.524885 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:34:21.650386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124334d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151d2710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1151d2990>]}
+
+
+============================== 22:34:21.652605 | e4f406e3-201c-4b49-b93a-b4f35b247682 ==============================
+[0m22:34:21.652605 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:34:21.652822 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'log_path': '/Users/sanchita/Projects (personal)/signal_ledger_dbt/logs', 'hints_enabled': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'no_print': 'None', 'log_format': 'default', 'use_colors': 'True', 'empty': 'None', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'debug': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'profiles_dir': '/Users/sanchita/Projects (personal)/signal_ledger_dbt', 'version_check': 'True', 'quiet': 'False', 'printer_width': '80', 'invocation_command': 'dbt docs serve'}
+[0m22:34:21.798544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e4f406e3-201c-4b49-b93a-b4f35b247682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115295ba0>]}
+[0m22:34:21.823535 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e4f406e3-201c-4b49-b93a-b4f35b247682', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1156606b0>]}
+[0m22:37:02.671411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116834d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11502a850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11502aad0>]}
+
+
+============================== 22:37:02.673927 | 0a973038-cc62-4544-8568-a70b51740043 ==============================
+[0m22:37:02.673927 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:37:02.674162 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'static_parser': 'True', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'write_json': 'True', 'no_print': 'None', 'log_path': '/Users/sanchita/Projects (personal)/signal_ledger_dbt/logs', 'introspect': 'True', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'hints_enabled': 'True', 'quiet': 'False', 'invocation_command': 'dbt test --select tag:metric_quality', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'indirect_selection': 'eager', 'use_colors': 'True', 'partial_parse': 'True', 'empty': 'None', 'printer_width': '80', 'profiles_dir': '/Users/sanchita/Projects (personal)/signal_ledger_dbt'}
+[0m22:37:02.860233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0a973038-cc62-4544-8568-a70b51740043', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114f9b5c0>]}
+[0m22:37:02.885792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0a973038-cc62-4544-8568-a70b51740043', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114d0a030>]}
+[0m22:37:02.886850 [info ] [MainThread]: Registered adapter: duckdb=1.11.0
+[0m22:37:02.917775 [debug] [MainThread]: checksum: 736f8253bf1e5e1cf9c769facf4e8bd36f24dc656845a15d713b60e177918854, vars: {}, profile: signal_ledger, target: dev, version: 1.12.5
+[0m22:37:02.984014 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:37:02.984165 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m22:37:02.984252 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:37:02.987671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0a973038-cc62-4544-8568-a70b51740043', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115b02e50>]}
+[0m22:37:03.042846 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:37:03.045575 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:37:03.054458 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:37:03.063202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0a973038-cc62-4544-8568-a70b51740043', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115c93b60>]}
+[0m22:37:03.063377 [info ] [MainThread]: Found 6 models, 18 data tests, 2 seeds, 2 sources, 500 macros
+[0m22:37:03.063494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0a973038-cc62-4544-8568-a70b51740043', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cdba10>]}
+[0m22:37:03.063755 [warn ] [MainThread]: [[33mWARNING[0m]: The selection criterion 'tag:metric_quality' does not match any enabled nodes
+[0m22:37:03.064197 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m22:37:03.064870 [debug] [MainThread]: Command end result
+[0m22:37:03.076421 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/manifest.json
+[0m22:37:03.077406 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/semantic_manifest.json
+[0m22:37:03.078242 [debug] [MainThread]: Wrote artifact OsiDocument to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/osi_document.json
+[0m22:37:03.079366 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/sanchita/Projects (personal)/signal_ledger_dbt/target/run_results.json
+[0m22:37:03.080902 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 0.45015845, "process_in_blocks": "0", "process_kernel_time": 0.172458, "process_mem_max_rss": "179748864", "process_out_blocks": "0", "process_user_time": 0.842703}
+[0m22:37:03.081092 [debug] [MainThread]: Command `dbt test` succeeded at 22:37:03.081059 after 0.45 seconds
+[0m22:37:03.081238 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150b8a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cecb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115ceca10>]}
+[0m22:37:03.081357 [debug] [MainThread]: Flushing usage events
+[0m22:37:03.533571 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:37:49.586034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ad834d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cfd2710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11cfd2990>]}
+
+
+============================== 22:37:49.588315 | 38312728-ecb8-4bce-87d3-86b58307bd6a ==============================
+[0m22:37:49.588315 [info ] [MainThread]: Running with dbt=1.12.5
+[0m22:37:49.588540 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'introspect': 'True', 'partial_parse': 'True', 'no_print': 'None', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'target_path': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'write_json': 'True', 'log_path': '/Users/sanchita/Projects (personal)/signal_ledger_dbt/logs', 'use_colors': 'True', 'static_parser': 'True', 'invocation_command': 'dbt docs serve', 'version_check': 'True', 'hints_enabled': 'True', 'empty': 'None', 'log_cache_events': 'False', 'profiles_dir': '/Users/sanchita/Projects (personal)/signal_ledger_dbt', 'quiet': 'False', 'maximum_seed_size_mib': '1'}
+[0m22:37:49.748795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '38312728-ecb8-4bce-87d3-86b58307bd6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d199ba0>]}
+[0m22:37:49.774102 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '38312728-ecb8-4bce-87d3-86b58307bd6a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11d5606b0>]}

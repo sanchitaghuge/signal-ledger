@@ -1,0 +1,12 @@
+
+  
+  create view "signal_ledger"."main"."int_daily_user_activity__dbt_tmp" as (
+    select
+    event_date,
+    user_id,
+    count(*) as total_events,
+    sum(case when event_name in ('app_open', 'content_view') then 1 else 0 end) as qualifying_active_events,
+    sum(case when event_name in ('message_sent', 'content_view', 'reaction_added') then 1 else 0 end) as meaningful_actions
+from "signal_ledger"."main"."stg_app_events"
+group by event_date, user_id
+  );

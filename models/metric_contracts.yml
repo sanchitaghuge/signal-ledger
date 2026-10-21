@@ -1,0 +1,32 @@
+# Human-readable metric contracts for this portfolio project.
+# Kept separate from dbt resource properties to avoid duplicate model declarations.
+# These contracts are documentation artifacts, not dbt Semantic Layer configuration.
+
+metric_contracts:
+  mart_daily_product_metrics:
+    owner: "Product Analytics"
+    status: "example"
+    grain: "One row per UTC calendar date"
+    definitions:
+      daily_active_users: "Distinct users with at least one app_open or content_view event on the date."
+      meaningful_actions: "Count of message_sent, content_view, and reaction_added events."
+      meaningful_actions_per_active_user: "Meaningful actions divided by daily active users."
+    exclusions:
+      - "Events outside the five documented event types fail validation."
+      - "Users without a qualifying active event are not included in DAU."
+    caveats:
+      - "This is synthetic demonstration data."
+      - "Definitions are project-specific and must be agreed with stakeholders before production use."
+    change_policy: "Propose definition changes in version control and review with analytics stakeholders."
+
+  mart_activation_by_cohort:
+    owner: "Product Analytics"
+    status: "example"
+    grain: "One row per signup date, acquisition channel, and country"
+    definitions:
+      signed_up_users: "Number of users registered in the cohort."
+      activated_users_7d: "Users who completed their profile within 7 days after registration."
+      activation_rate_7d: "activated_users_7d / signed_up_users."
+    caveats:
+      - "Users with less than seven days of observation may be right-censored in real datasets."
+      - "The sample data is synthetic and designed for demonstration."

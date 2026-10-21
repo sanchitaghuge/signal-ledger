@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: app_users
+        description: "Synthetic user registrations loaded from dbt seeds."
+      - name: app_events
+        description: "Synthetic product event stream loaded from dbt seeds."
