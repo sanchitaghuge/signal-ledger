@@ -87,7 +87,3 @@ dbt test --select tag:metric_quality
 2. Add a `metric_definition_version` field to track definition changes over time.
 3. Add CI with `dbt build` on pull requests.
 4. Add a small Streamlit page that displays the metrics and links each number to its definition and tests.
-
-## How to present this project
-
-Describe it as an **independent dbt portfolio project**. Explain the model grain, the 7-day activation rule, why each test exists, and how the contract helps analysts or AI tools avoid ambiguous metrics. Do not describe it as production work.
